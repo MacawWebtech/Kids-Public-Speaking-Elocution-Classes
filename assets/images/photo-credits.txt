@@ -1,0 +1,4 @@
+SpeakUp Stage: photos
+=====================
+All photos are supplied by the site owner and served locally from this folder.
+No external image hosts are used.

@@ -1,0 +1,95 @@
+/* ==========================================================================
+   SpeakUp Stage — Dark Mode ("Backstage after dark")
+   Applied when <html data-theme="dark">. main.js sets this from the
+   user's saved choice or, on first visit, prefers-color-scheme.
+   ========================================================================== */
+[data-theme="dark"] {
+  color-scheme: dark;
+  /* Dark-mode brand equivalents (lifted for contrast on navy-black) */
+  --su-navy: #0E1730;            /* deepest surface used where navy was a fill */
+  --su-navy-700: #1A2747;
+  --su-navy-300: #8C9AC0;
+  --su-orange: #FF9A4D;
+  --su-orange-600: #FFB07A;
+  --su-orange-100: #42281A;
+  --su-teal: #3FD6C8;
+  --su-teal-700: #5FE0D3;
+  --su-teal-100: #123B39;
+  --su-cream: #0B1226;
+
+  --su-bg: #0B1226;
+  --su-bg-alt: #111A33;
+  --su-surface: #16213F;
+  --su-surface-2: #1C2949;
+  --su-text: #E8ECF6;
+  --su-text-muted: #B3BDD6;
+  --su-border: #2B3A61;
+  --su-heading: #FFFFFF;
+  --su-link: #FFB07A;
+  --su-focus: #FF9A4D;
+
+  --sh-1: 0 1px 2px rgba(0,0,0,.35);
+  --sh-2: 0 2px 6px rgba(0,0,0,.35), 0 10px 28px rgba(0,0,0,.35);
+  --sh-3: 0 6px 12px rgba(0,0,0,.4), 0 20px 50px rgba(0,0,0,.45);
+}
+[data-theme="dark"] body { background-color: var(--su-bg); }
+[data-theme="dark"] .su-header { background: rgba(11,18,38,.86); }
+[data-theme="dark"] .su-header .nav-link:hover,
+[data-theme="dark"] .su-header .nav-link.active { background: var(--su-surface-2); }
+[data-theme="dark"] .brand-mark { background: var(--su-orange); color: #0E1730; }
+[data-theme="dark"] .page-hero, [data-theme="dark"] .bg-navy, [data-theme="dark"] .hero-2 { background: #101B3A; }
+[data-theme="dark"] .hero-2.has-bg::after { background: linear-gradient(90deg, rgba(10,17,38,.96) 0%, rgba(16,27,58,.9) 55%, rgba(16,27,58,.78) 100%); }
+[data-theme="dark"] .trust-inner { background: #16213F; border: 1px solid var(--su-border); }
+[data-theme="dark"] .su-footer { background: #070D1D; }
+[data-theme="dark"] .fill-navy { fill: #101B3A; }
+[data-theme="dark"] .footer-curtain .fill-navy { fill: #070D1D; }
+[data-theme="dark"] .btn-su-primary { background: #FF9A4D; border-color: #FF9A4D; color: #1A0B09; text-shadow: none; box-shadow: 0 6px 0 -1px #B7392D, var(--sh-2); }
+[data-theme="dark"] .btn-su-primary:hover { background: #FF9A4D; border-color: #FF9A4D; color: #1A0B09; }
+[data-theme="dark"] .btn-su-navy { background: var(--su-orange); border-color: var(--su-orange); color: #0E1730; }
+[data-theme="dark"] .btn-su-navy:hover { background: #FFB07A; color: #0E1730; }
+[data-theme="dark"] .btn-su-outline { border-color: #E8ECF6; color: #E8ECF6; }
+[data-theme="dark"] .btn-su-outline:hover { background: #E8ECF6; color: #0E1730; }
+[data-theme="dark"] .btn-su-teal { background: #3FD6C8; border-color: #3FD6C8; color: #062421; }
+[data-theme="dark"] .cta-banner { background: #3A2412; border: 1px solid #5B3418; }
+[data-theme="dark"] .cta-banner.has-bg { background: #0E1730; border-color: #1E2C52; }
+[data-theme="dark"] .cta-banner.has-bg::after { background: linear-gradient(90deg, rgba(10,17,38,.96) 0%, rgba(16,27,58,.9) 50%, rgba(91,52,24,.82) 100%); }
+[data-theme="dark"] .cta-banner .btn-su-navy { background: var(--su-orange); color: #0E1730; }
+[data-theme="dark"] .t-navy, [data-theme="dark"] .b-navy { background: #22305A; color: #DCE3F6; }
+[data-theme="dark"] .t-orange, [data-theme="dark"] .b-orange { color: #FFB380; }
+[data-theme="dark"] .t-teal, [data-theme="dark"] .b-teal { color: #6FE6DA; }
+[data-theme="dark"] .pc-orange .pc-top, [data-theme="dark"] .pc-teal .pc-top { color: #0E1730; }
+[data-theme="dark"] .pc-orange .pc-top h3, [data-theme="dark"] .pc-teal .pc-top h3, [data-theme="dark"] .pc-orange .pc-top .pc-age { color: #0E1730; }
+[data-theme="dark"] .pc-navy .pc-top { background: #22305A; }
+[data-theme="dark"] .date-badge { background: #22305A; }
+[data-theme="dark"] .achv-ribbon, [data-theme="dark"] .price-card .pop { color: #0E1730; }
+[data-theme="dark"] .price-card.featured { background: #22305A; border-color: #3A4C80; }
+[data-theme="dark"] .filter-chip.active, [data-theme="dark"] .filter-chip[aria-pressed="true"],
+[data-theme="dark"] .su-tabs .nav-link.active, [data-theme="dark"] .bill-toggle button[aria-pressed="true"],
+[data-theme="dark"] .slot-grid .btn-check:checked + .btn { background: var(--su-orange) !important; border-color: var(--su-orange) !important; color: #0E1730 !important; }
+[data-theme="dark"] .form-check-input:checked { background-color: var(--su-orange); border-color: var(--su-orange); }
+[data-theme="dark"] .form-check-input { background-color: var(--su-surface-2); }
+[data-theme="dark"] .form-control::placeholder { color: #8E99B8; }
+[data-theme="dark"] .form-select { --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23E8ECF6' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e"); }
+[data-theme="dark"] .su-form .invalid-feedback, [data-theme="dark"] .su-form .form-error { color: #FF9C93; }
+[data-theme="dark"] .accordion-button::after { filter: invert(1) brightness(1.8); }
+[data-theme="dark"] .btn-close { filter: invert(1) grayscale(100%) brightness(200%); }
+[data-theme="dark"] .skeleton::after { background: linear-gradient(90deg, transparent, rgba(255,255,255,.08), transparent); }
+[data-theme="dark"] .cal-day.muted { color: #3A4A72; }
+[data-theme="dark"] .cal-day.today { outline-color: var(--su-orange); }
+[data-theme="dark"] .stars { color: #FF9A4D; }
+[data-theme="dark"] .hand { color: #FFB07A; }
+[data-theme="dark"] .squiggle::after { opacity: .85; }
+[data-theme="dark"] .step-num { -webkit-text-stroke-color: #E8ECF6; }
+[data-theme="dark"] .gauge .g-track { stroke: #2B3A61; }
+[data-theme="dark"] .callout .num { color: #1A0B09; }
+[data-theme="dark"] .video-thumb .play { color: #1A0B09; }
+[data-theme="dark"] .err-code { color: #FFFFFF; }
+[data-theme="dark"] .toast-su { background: #22305A; }
+[data-theme="dark"] img.dim-dark { filter: brightness(.9); }
+
+/* Dashboard */
+[data-theme="dark"] .dash-sidebar { background: #070D1D; }
+[data-theme="dark"] .dash-topbar { background: rgba(11,18,38,.9); }
+[data-theme="dark"] .msg-bubble.me { background: #22305A; color: #fff; }
+
+[data-theme="dark"] .page-hero.has-bg::after { background: linear-gradient(90deg, rgba(10,17,38,.95) 0%, rgba(16,27,58,.88) 50%, rgba(16,27,58,.7) 100%); }

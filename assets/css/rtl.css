@@ -1,0 +1,64 @@
+/* ==========================================================================
+   SpeakUp Stage — RTL overrides (Arabic / Hebrew)
+   Activated when <html dir="rtl">. main.js also swaps Bootstrap's LTR
+   stylesheet for bootstrap.rtl.min.css so grid/utilities mirror too.
+   Most custom CSS uses logical properties; this file mirrors the rest.
+   ========================================================================== */
+[dir="rtl"] body { font-family: "Nunito", "Segoe UI", Tahoma, "Noto Sans Arabic", sans-serif; }
+[dir="rtl"] { --r-bubble: 24px 24px 6px 24px; --r-bubble-r: 24px 24px 24px 6px; }
+
+/* Header */
+[dir="rtl"] .brand-mark { border-radius: 14px 14px 4px 14px; }
+[dir="rtl"] .brand-mark::after { right: auto; left: -4px; }
+[dir="rtl"] .navbar-nav { padding-right: 0; }
+
+/* Hero */
+[dir="rtl"] .hero::before { right: auto; left: -300px; }
+[dir="rtl"] .hero-stage .spot-svg { transform: scaleX(-1); }
+[dir="rtl"] .chip-bubble.c1 { left: auto; right: -4%; }
+[dir="rtl"] .chip-bubble.c2 { right: auto; left: -6%; }
+[dir="rtl"] .chip-bubble.c3 { left: auto; right: 2%; }
+[dir="rtl"] .hero-meter { right: auto; left: 4%; }
+[dir="rtl"] .spot-beam { right: auto; left: 6%; transform: scaleX(-1); }
+[dir="rtl"] .auth-art .spot-beam { left: 10%; }
+
+/* Cards & components */
+[dir="rtl"] .bubble-card.tail::after { left: auto; right: 36px; clip-path: polygon(0 0, 100% 0, 100% 100%); }
+[dir="rtl"] .step-num { right: auto; left: 20px; }
+[dir="rtl"] .program-card .pc-ico { right: auto; left: 20px; }
+[dir="rtl"] .achv-ribbon { left: auto; right: 14px; }
+[dir="rtl"] .coach-card .mic-pin { right: auto; left: 12px; }
+[dir="rtl"] .cta-banner { border-radius: 32px 32px 10px 32px; }
+[dir="rtl"] .cta-banner .cta-mic { right: auto; left: -30px; transform: rotate(18deg) scaleX(-1); }
+[dir="rtl"] .link-arrow i, [dir="rtl"] .bi-arrow-right, [dir="rtl"] .bi-chevron-right, [dir="rtl"] .bi-arrow-right-short { display: inline-block; transform: scaleX(-1); }
+[dir="rtl"] .link-arrow:hover i { transform: scaleX(-1) translateX(4px); }
+[dir="rtl"] .timeline::before { left: auto; right: 23px; }
+[dir="rtl"] .timeline li { padding-left: 0; padding-right: 68px; }
+[dir="rtl"] .timeline .tl-dot { left: auto; right: 0; }
+[dir="rtl"] .article-body blockquote { border-radius: var(--r-md) 0 0 var(--r-md); }
+[dir="rtl"] .pw-toggle { right: auto; left: 4px; }
+[dir="rtl"] .back-top { right: auto; left: 20px; }
+[dir="rtl"] .screen-frame .live { left: auto; right: 14px; }
+[dir="rtl"] .screen-frame .tiles { right: auto; left: 14px; }
+[dir="rtl"] .price-card .pop { left: auto; right: 50%; transform: translateX(50%); }
+[dir="rtl"] .squiggle::after { transform: scaleX(-1); }
+[dir="rtl"] .video-thumb .play i { margin-inline-start: 0; margin-inline-end: 6px; transform: scaleX(-1); }
+[dir="rtl"] .step-connector { right: auto; left: -46px; transform: scaleX(-1); }
+[dir="rtl"] .mock-pin { transform: none; }
+[dir="rtl"] .skeleton::after { transform: translateX(100%); animation-name: shimmer-rtl; }
+@keyframes shimmer-rtl { 100% { transform: translateX(-100%); } }
+[dir="rtl"] .cwave { flex-direction: row-reverse; }
+
+/* Dashboard */
+[dir="rtl"] .dash-sidebar { left: auto; right: 0; border-radius: 0; }
+[dir="rtl"] .dash-sidebar .side-link.active::before { left: auto; right: 0; border-radius: 4px 0 0 4px; }
+[dir="rtl"] .msg-bubble.me { border-radius: 18px 18px 18px 4px; }
+[dir="rtl"] .msg-bubble.them { border-radius: 18px 18px 4px 18px; }
+@media (min-width: 1024px) {
+  [dir="rtl"] .dash-main { margin-left: 0; margin-right: 272px; }
+}
+@media (max-width: 1023.98px) {
+  [dir="rtl"] .dash-sidebar { transform: translateX(100%); }
+  [dir="rtl"] .dash-sidebar.open { transform: none; }
+}
+[dir="rtl"] .trust-item strong, [dir="rtl"] .pc-age, [dir="rtl"] .cmeter-head .val, [dir="rtl"] .price, [dir="rtl"] .gauge .g-val { direction: ltr; unicode-bidi: isolate; }
