@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parent Dashboard: Overview | SpeakUp Stage</title>
+<meta name="description" content="Your SpeakUp Stage parent dashboard: children&#x27;s next sessions, upcoming competitions, pending payments, Confidence Meter scores and the latest coach notes.">
+<link rel="canonical" href="https://www.speakupstage.example/dashboard/index.html">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1B2A4E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SpeakUp Stage">
+<meta property="og:title" content="Parent Dashboard: Overview | SpeakUp Stage">
+<meta property="og:description" content="Your SpeakUp Stage parent dashboard: children&#x27;s next sessions, upcoming competitions, pending payments, Confidence Meter scores and the latest coach notes.">
+<meta property="og:url" content="https://www.speakupstage.example/dashboard/index.html">
+<meta property="og:image" content="../assets/images/banner.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+<!-- Prevent theme/direction flash: read saved preferences before CSS paints -->
+<script>(function(){var d=document.documentElement,t=null,r=null;try{t=localStorage.getItem('su-theme');r=localStorage.getItem('su-dir');}catch(e){}d.setAttribute('data-theme',t||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));if(r==='rtl'){d.setAttribute('dir','rtl');d.setAttribute('lang','ar');}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- TODO: fonts. Swap families here and in the su-font custom properties (style.css) -->
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&amp;family=Caveat:wght@600&amp;family=Nunito:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<link id="bs-css" rel="stylesheet" href="../assets/js/plugins/bootstrap/bootstrap.min.css" data-ltr="../assets/js/plugins/bootstrap/bootstrap.min.css" data-rtl="../assets/js/plugins/bootstrap/bootstrap.rtl.min.css">
+<script>if(document.documentElement.dir==='rtl'){var b=document.getElementById('bs-css');b.href=b.getAttribute('data-rtl');}</script>
+<link rel="stylesheet" href="../assets/js/plugins/bootstrap-icons/bootstrap-icons.min.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/dashboard.css">
+<link rel="stylesheet" href="../assets/css/dark-mode.css">
+<link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body class="dash-body">
+<a class="skip-link" href="#main">Skip to main content</a>
+<aside class="dash-sidebar" id="dashSidebar" aria-label="Dashboard navigation">
+  <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><i class="bi bi-mic-fill"></i></span><span>SpeakUp Stage<small>parent portal</small></span></a>
+  <nav aria-label="Dashboard sections"><p class="side-label">Main</p><ul class="side-nav"><li><a class="side-link active" aria-current="page" href="index.html"><i class="bi bi-house-door" aria-hidden="true"></i><span>Overview</span></a></li><li><a class="side-link" href="children.html"><i class="bi bi-people" aria-hidden="true"></i><span>My Children</span></a></li><li><a class="side-link" href="enrol.html"><i class="bi bi-pencil-square" aria-hidden="true"></i><span>Enrol in Batches</span></a></li><li><a class="side-link" href="progress.html"><i class="bi bi-graph-up-arrow" aria-hidden="true"></i><span>Progress Tracker</span></a></li></ul><p class="side-label">Plan</p><ul class="side-nav"><li><a class="side-link" href="schedule.html"><i class="bi bi-calendar3" aria-hidden="true"></i><span>Schedule</span></a></li><li><a class="side-link" href="competitions.html"><i class="bi bi-trophy" aria-hidden="true"></i><span>Competitions</span></a></li><li><a class="side-link" href="payments.html"><i class="bi bi-wallet2" aria-hidden="true"></i><span>Payments</span><span class="count">1<span class="visually-hidden"> new</span></span></a></li><li><a class="side-link" href="messages.html"><i class="bi bi-chat-dots" aria-hidden="true"></i><span>Messages</span><span class="count">3<span class="visually-hidden"> new</span></span></a></li></ul><p class="side-label">Account</p><ul class="side-nav"><li><a class="side-link" href="settings.html"><i class="bi bi-gear" aria-hidden="true"></i><span>Settings</span></a></li></ul></nav>
+  <div class="side-help mt-4"><strong>Need help?</strong>Our parent desk replies within 2 hours on WhatsApp.<a class="d-flex align-items-center gap-2 mt-2 fw-800 text-decoration-none" style="color:var(--su-orange);min-height:44px" href="https://wa.me/919840012345"><i class="bi bi-whatsapp" aria-hidden="true"></i> Chat with us</a></div>
+  <ul class="side-nav mt-3"><li><a class="side-link" href="../index.html"><i class="bi bi-globe2" aria-hidden="true"></i><span>Back to website</span></a></li><li><a class="side-link" href="../pages/login.html"><i class="bi bi-box-arrow-left" aria-hidden="true"></i><span>Log out</span></a></li></ul>
+</aside>
+<div class="dash-backdrop" data-dash-close></div>
+<div class="dash-main">
+<header class="dash-topbar">
+  <button class="tool-btn dash-menu-btn" type="button" data-dash-toggle aria-controls="dashSidebar" aria-expanded="false" aria-label="Open dashboard menu"><i class="bi bi-list" aria-hidden="true"></i></button>
+  <form class="search" role="search" action="enrol.html"><label class="visually-hidden" for="dash-q">Search batches, coaches, invoices</label><i class="bi bi-search" aria-hidden="true"></i><input class="form-control" id="dash-q" type="search" name="q" placeholder="Search batches, coaches, invoices"></form>
+  <div class="dash-user">
+    <button class="tool-btn" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to dark mode"><i class="bi bi-moon-stars-fill" aria-hidden="true"></i></button>
+    <button class="tool-btn" type="button" data-rtl-toggle aria-pressed="false" aria-label="Switch to right-to-left layout"><span class="rtl-label">RTL</span></button>
+    <a class="tool-btn notif-dot" href="messages.html" aria-label="Messages, 3 unread"><i class="bi bi-bell" aria-hidden="true"></i></a>
+    <a class="d-flex align-items-center gap-2 text-decoration-none" href="settings.html"><img src="../assets/images/review1.jpg" alt="" width="160" height="160" loading="lazy" decoding="async"><span class="who"><strong>Lakshmi Venkatesh</strong><span>Parent · 2 children</span></span><span class="visually-hidden">Account settings</span></a>
+  </div>
+</header>
+<main class="dash-content" id="main" tabindex="-1">
+  <div class="dash-title"><div><h1>Good afternoon, Lakshmi</h1><p>Here's what's happening with Diya and Arjun this week.</p></div><div class="d-flex gap-2 flex-wrap"><a class="btn btn-su-primary btn-sm" href="enrol.html"><i class="bi bi-plus-lg" aria-hidden="true"></i> Enrol in a batch</a></div></div>
+
+  <!-- Stat tiles -->
+  <div class="row g-3 mb-4">
+    <div class="col-sm-6 col-xl-3"><div class="panel stat-tile"><span class="icon-tile t-orange" aria-hidden="true"><i class="bi bi-calendar-event"></i></span><div><div class="k">Next session</div><div class="v">Sat, 10 Oct</div><div class="s">Diya · 10:00 AM · Studio</div></div></div></div>
+    <div class="col-sm-6 col-xl-3"><div class="panel stat-tile"><span class="icon-tile t-orange" aria-hidden="true"><i class="bi bi-trophy"></i></span><div><div class="k">Upcoming competition</div><div class="v">8 Nov</div><div class="s">Arjun · State Junior Elocution</div></div></div></div>
+    <div class="col-sm-6 col-xl-3"><div class="panel stat-tile"><span class="icon-tile t-navy" aria-hidden="true"><i class="bi bi-wallet2"></i></span><div><div class="k">Pending payment</div><div class="v">₹2,499</div><div class="s">Due 15 Oct · <a href="payments.html">Pay now</a></div></div></div></div>
+    <div class="col-sm-6 col-xl-3"><div class="panel stat-tile"><span class="icon-tile t-teal" aria-hidden="true"><i class="bi bi-check2-all"></i></span><div><div class="k">Attendance</div><div class="v">94%</div><div class="s">This term, both children</div></div></div></div>
+  </div>
+  <div class="row g-4">
+    <div class="col-xl-8">
+      <div class="panel-head"><h2 class="h5 m-0">My children</h2><a class="btn btn-su-ghost btn-sm" href="children.html"><i class="bi bi-plus-lg" aria-hidden="true"></i> Add child</a></div>
+      <div class="row g-4 mb-4" data-skeleton="900"><div class="col-md-6"><div class="panel sk-ph" aria-hidden="true"><div class="d-flex gap-3 align-items-center mb-3"><div class="skeleton sk-circle"></div><div class="flex-grow-1"><div class="skeleton sk-title"></div><div class="skeleton sk-line w-60"></div></div></div><div class="skeleton sk-line"></div><div class="skeleton sk-line w-80"></div></div><div class="sk-real"><div class="panel">
+  <div class="child-card mb-3"><img src="../assets/images/diya.jpg" alt="Diya's profile photo" width="240" height="240" loading="lazy" decoding="async"><div><h3>Diya Venkatesh</h3><div class="meta">Age 9 · Young Speakers</div><div class="meta"><i class="bi bi-calendar3" aria-hidden="true"></i> YS-B2 · Sat 10:00 AM</div></div></div>
+  <div class="cmeter"><div class="cmeter-head"><span>Confidence Meter</span><span class="val">82%</span></div><div class="cwave" role="img" data-level="82" data-bars="22" aria-label="Confidence Meter: 82 out of 100" data-animate></div></div>
+  <div class="d-flex justify-content-between align-items-center mt-3 flex-wrap gap-2"><span class="su-badge b-teal"><i class="bi bi-arrow-up-right" aria-hidden="true"></i> +54 since joining</span><a class="link-arrow" href="progress.html">View progress <span class="visually-hidden">for Diya</span><i class="bi bi-arrow-right" aria-hidden="true"></i></a></div>
+</div></div></div><div class="col-md-6"><div class="panel sk-ph" aria-hidden="true"><div class="d-flex gap-3 align-items-center mb-3"><div class="skeleton sk-circle"></div><div class="flex-grow-1"><div class="skeleton sk-title"></div><div class="skeleton sk-line w-60"></div></div></div><div class="skeleton sk-line"></div><div class="skeleton sk-line w-80"></div></div><div class="sk-real"><div class="panel">
+  <div class="child-card mb-3"><img src="../assets/images/aarav.jpg" alt="Arjun's profile photo" width="240" height="240" loading="lazy" decoding="async"><div><h3>Arjun Venkatesh</h3><div class="meta">Age 13 · Rising Orators</div><div class="meta"><i class="bi bi-calendar3" aria-hidden="true"></i> RO-A · Sat 11:30 AM</div></div></div>
+  <div class="cmeter"><div class="cmeter-head"><span>Confidence Meter</span><span class="val">74%</span></div><div class="cwave" role="img" data-level="74" data-bars="22" aria-label="Confidence Meter: 74 out of 100" data-animate></div></div>
+  <div class="d-flex justify-content-between align-items-center mt-3 flex-wrap gap-2"><span class="su-badge b-teal"><i class="bi bi-arrow-up-right" aria-hidden="true"></i> +28 since joining</span><a class="link-arrow" href="progress.html">View progress <span class="visually-hidden">for Arjun</span><i class="bi bi-arrow-right" aria-hidden="true"></i></a></div>
+</div></div></div></div>
+      <div class="panel">
+        <div class="panel-head"><h2><i class="bi bi-graph-up" aria-hidden="true"></i> Confidence over the term</h2><span class="su-badge b-gray">Weekly coach score</span></div>
+        <div class="chart-box"><canvas id="chartOverview" aria-label="Line chart of Diya's and Arjun's weekly confidence scores, rising from 28 and 46 to 82 and 74" role="img"></canvas><div class="chart-fallback">Chart placeholder: confidence trend loads here (Chart.js).</div></div>
+      </div>
+    </div>
+    <div class="col-xl-4">
+      <div class="d-grid gap-4">
+        <div class="panel">
+          <div class="panel-head"><h2><i class="bi bi-journal-text" aria-hidden="true"></i> Latest progress note</h2></div>
+          <div class="note-item"><img src="../assets/images/meera%20iyer.jpg" alt="" width="160" height="160" loading="lazy" decoding="async" class="mini-avatar"><div><strong class="text-navy">Meera Iyer</strong> <span class="when">· 3 Oct · Diya</span><p>Beautiful pauses in “The Owl and the Pussycat” today! Next goal: look up at the audience on every new verse.</p></div></div>
+          <a class="link-arrow" href="progress.html">All notes <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="panel">
+          <div class="panel-head"><h2><i class="bi bi-calendar-week" aria-hidden="true"></i> Coming up</h2><a class="small fw-800" href="schedule.html">Calendar</a></div>
+          <div class="session-row"><div class="date-badge"><span class="m">Oct</span><span class="d">10</span></div><div><h3>Young Speakers · Week 7</h3><div class="meta">Diya · 10:00 AM · Studio</div></div></div>
+          <div class="session-row"><div class="date-badge"><span class="m">Oct</span><span class="d">10</span></div><div><h3>Rising Orators · Week 7</h3><div class="meta">Arjun · 11:30 AM · Studio</div></div></div>
+          <div class="session-row"><div class="date-badge" style="background:var(--su-orange-700)"><span class="m" style="color:#fff">Oct</span><span class="d">31</span></div><div><h3>Monthly showcase</h3><div class="meta">Both · 4:00 PM · Studio stage</div></div></div>
+        </div>
+        <div class="panel">
+          <div class="panel-head"><h2><i class="bi bi-megaphone" aria-hidden="true"></i> Announcement</h2></div>
+          <p class="mb-2"><strong>Diwali break:</strong> no classes 7–9 Nov. Make-up classes will be added to your schedule.</p>
+          <a class="link-arrow" href="messages.html">Read all <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="dash-footer">&copy; <span data-year>2026</span> SpeakUp Stage · <a href="../pages/contact.html">Help &amp; support</a> · v1.1.0</footer>
+</div>
+<script src="../assets/js/plugins/bootstrap/bootstrap.bundle.min.js" defer></script>
+<script src="../assets/js/plugins/chartjs/chart.umd.min.js" defer></script>
+<script src="../assets/js/main.js" defer></script>
+<script src="../assets/js/dashboard.js" defer></script>
+</body>
+</html>

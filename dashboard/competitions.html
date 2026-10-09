@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Competitions | SpeakUp Stage Parent Dashboard</title>
+<meta name="description" content="Track the competitions your children are registered for, register for new elocution, storytelling and debate events, and see their results history and awards.">
+<link rel="canonical" href="https://www.speakupstage.example/dashboard/competitions.html">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1B2A4E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SpeakUp Stage">
+<meta property="og:title" content="My Competitions | SpeakUp Stage Parent Dashboard">
+<meta property="og:description" content="Track the competitions your children are registered for, register for new elocution, storytelling and debate events, and see their results history and awards.">
+<meta property="og:url" content="https://www.speakupstage.example/dashboard/competitions.html">
+<meta property="og:image" content="../assets/images/banner.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+<!-- Prevent theme/direction flash: read saved preferences before CSS paints -->
+<script>(function(){var d=document.documentElement,t=null,r=null;try{t=localStorage.getItem('su-theme');r=localStorage.getItem('su-dir');}catch(e){}d.setAttribute('data-theme',t||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));if(r==='rtl'){d.setAttribute('dir','rtl');d.setAttribute('lang','ar');}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- TODO: fonts. Swap families here and in the su-font custom properties (style.css) -->
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&amp;family=Caveat:wght@600&amp;family=Nunito:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<link id="bs-css" rel="stylesheet" href="../assets/js/plugins/bootstrap/bootstrap.min.css" data-ltr="../assets/js/plugins/bootstrap/bootstrap.min.css" data-rtl="../assets/js/plugins/bootstrap/bootstrap.rtl.min.css">
+<script>if(document.documentElement.dir==='rtl'){var b=document.getElementById('bs-css');b.href=b.getAttribute('data-rtl');}</script>
+<link rel="stylesheet" href="../assets/js/plugins/bootstrap-icons/bootstrap-icons.min.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/dashboard.css">
+<link rel="stylesheet" href="../assets/css/dark-mode.css">
+<link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body class="dash-body">
+<a class="skip-link" href="#main">Skip to main content</a>
+<aside class="dash-sidebar" id="dashSidebar" aria-label="Dashboard navigation">
+  <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><i class="bi bi-mic-fill"></i></span><span>SpeakUp Stage<small>parent portal</small></span></a>
+  <nav aria-label="Dashboard sections"><p class="side-label">Main</p><ul class="side-nav"><li><a class="side-link" href="index.html"><i class="bi bi-house-door" aria-hidden="true"></i><span>Overview</span></a></li><li><a class="side-link" href="children.html"><i class="bi bi-people" aria-hidden="true"></i><span>My Children</span></a></li><li><a class="side-link" href="enrol.html"><i class="bi bi-pencil-square" aria-hidden="true"></i><span>Enrol in Batches</span></a></li><li><a class="side-link" href="progress.html"><i class="bi bi-graph-up-arrow" aria-hidden="true"></i><span>Progress Tracker</span></a></li></ul><p class="side-label">Plan</p><ul class="side-nav"><li><a class="side-link" href="schedule.html"><i class="bi bi-calendar3" aria-hidden="true"></i><span>Schedule</span></a></li><li><a class="side-link active" aria-current="page" href="competitions.html"><i class="bi bi-trophy" aria-hidden="true"></i><span>Competitions</span></a></li><li><a class="side-link" href="payments.html"><i class="bi bi-wallet2" aria-hidden="true"></i><span>Payments</span><span class="count">1<span class="visually-hidden"> new</span></span></a></li><li><a class="side-link" href="messages.html"><i class="bi bi-chat-dots" aria-hidden="true"></i><span>Messages</span><span class="count">3<span class="visually-hidden"> new</span></span></a></li></ul><p class="side-label">Account</p><ul class="side-nav"><li><a class="side-link" href="settings.html"><i class="bi bi-gear" aria-hidden="true"></i><span>Settings</span></a></li></ul></nav>
+  <div class="side-help mt-4"><strong>Need help?</strong>Our parent desk replies within 2 hours on WhatsApp.<a class="d-flex align-items-center gap-2 mt-2 fw-800 text-decoration-none" style="color:var(--su-orange);min-height:44px" href="https://wa.me/919840012345"><i class="bi bi-whatsapp" aria-hidden="true"></i> Chat with us</a></div>
+  <ul class="side-nav mt-3"><li><a class="side-link" href="../index.html"><i class="bi bi-globe2" aria-hidden="true"></i><span>Back to website</span></a></li><li><a class="side-link" href="../pages/login.html"><i class="bi bi-box-arrow-left" aria-hidden="true"></i><span>Log out</span></a></li></ul>
+</aside>
+<div class="dash-backdrop" data-dash-close></div>
+<div class="dash-main">
+<header class="dash-topbar">
+  <button class="tool-btn dash-menu-btn" type="button" data-dash-toggle aria-controls="dashSidebar" aria-expanded="false" aria-label="Open dashboard menu"><i class="bi bi-list" aria-hidden="true"></i></button>
+  <form class="search" role="search" action="enrol.html"><label class="visually-hidden" for="dash-q">Search batches, coaches, invoices</label><i class="bi bi-search" aria-hidden="true"></i><input class="form-control" id="dash-q" type="search" name="q" placeholder="Search batches, coaches, invoices"></form>
+  <div class="dash-user">
+    <button class="tool-btn" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to dark mode"><i class="bi bi-moon-stars-fill" aria-hidden="true"></i></button>
+    <button class="tool-btn" type="button" data-rtl-toggle aria-pressed="false" aria-label="Switch to right-to-left layout"><span class="rtl-label">RTL</span></button>
+    <a class="tool-btn notif-dot" href="messages.html" aria-label="Messages, 3 unread"><i class="bi bi-bell" aria-hidden="true"></i></a>
+    <a class="d-flex align-items-center gap-2 text-decoration-none" href="settings.html"><img src="../assets/images/review1.jpg" alt="" width="160" height="160" loading="lazy" decoding="async"><span class="who"><strong>Lakshmi Venkatesh</strong><span>Parent · 2 children</span></span><span class="visually-hidden">Account settings</span></a>
+  </div>
+</header>
+<main class="dash-content" id="main" tabindex="-1">
+  <div class="dash-title"><div><h1>Competitions</h1><p>Registered events, new events and results.</p></div><div class="d-flex gap-2 flex-wrap"></div></div>
+
+  <div class="row g-4">
+    <div class="col-12"><div class="panel"><div class="panel-head"><h2><i class="bi bi-check2-circle" aria-hidden="true"></i> Registered</h2></div><div class="table-wrap"><div class="table-responsive"><table class="table table-su align-middle mb-0"><caption class="visually-hidden">Registered competitions</caption><thead><tr><th scope="col">Competition</th><th scope="col">Child</th><th scope="col">Date</th><th scope="col">Status</th></tr></thead><tbody>
+<tr><td>State Junior Elocution Championship</td><td>Arjun</td><td>8 Nov 2026</td><td><span class="su-badge b-teal">Confirmed</span></td></tr>
+<tr><td>Little Voices Storytelling Fest</td><td>Diya</td><td>22 Nov 2026</td><td><span class="su-badge b-orange">Payment due</span></td></tr></tbody></table></div></div></div></div>
+    <div class="col-xl-7"><div class="panel"><div class="panel-head"><h2><i class="bi bi-calendar-plus" aria-hidden="true"></i> Available for your children</h2><a class="small fw-800" href="../pages/competitions.html">All competitions</a></div><div class="row g-3"><div class="col-md-6"><div class="panel event-card"><div class="date-badge"><span class="m">Dec</span><span class="d">13</span><span class="y">2026</span></div><div class="ev-body"><h3 class="h6 fw-800">Young Debaters Cup</h3><ul class="ev-meta"><li><i class="bi bi-person" aria-hidden="true"></i>Ages 11–16</li><li><i class="bi bi-ticket-perforated" aria-hidden="true"></i>₹800</li></ul><button class="btn btn-su-primary btn-sm" type="button" data-demo-toast="Registered! The entry fee was added to Payments." data-icon="bi-trophy">Register <span class="visually-hidden">for Young Debaters Cup</span></button></div></div></div><div class="col-md-6"><div class="panel event-card"><div class="date-badge"><span class="m">Jan</span><span class="d">17</span><span class="y">2027</span></div><div class="ev-body"><h3 class="h6 fw-800">New Year Extempore Challenge</h3><ul class="ev-meta"><li><i class="bi bi-person" aria-hidden="true"></i>Ages 10–16</li><li><i class="bi bi-ticket-perforated" aria-hidden="true"></i>₹250</li></ul><button class="btn btn-su-primary btn-sm" type="button" data-demo-toast="Registered! The entry fee was added to Payments." data-icon="bi-trophy">Register <span class="visually-hidden">for New Year Extempore Challenge</span></button></div></div></div></div></div></div>
+    <div class="col-xl-5"><div class="panel">
+      <div class="panel-head"><h2><i class="bi bi-award" aria-hidden="true"></i> Results history</h2></div>
+      <ul class="list-unstyled mb-4"><li class="d-flex gap-3 align-items-center py-2"><span class="icon-tile t-orange m-0" style="width:44px;height:44px;flex-basis:44px" aria-hidden="true"><i class="bi bi-trophy-fill"></i></span><div><strong class="text-navy">Diya · Best Storyteller</strong><div class="small text-muted-su">Chennai Kids Lit Fest · Aug 2026</div></div></li>
+      <li class="d-flex gap-3 align-items-center py-2"><span class="icon-tile t-teal m-0" style="width:44px;height:44px;flex-basis:44px" aria-hidden="true"><i class="bi bi-patch-check-fill"></i></span><div><strong class="text-navy">Diya · Participation</strong><div class="small text-muted-su">Monsoon Recitation Meet · Aug 2026</div></div></li></ul>
+      <div class="empty-state p-3"><div class="es-ico" aria-hidden="true"><i class="bi bi-trophy"></i></div><h3 class="h5">No results for Arjun yet</h3><p>His first competition is on 8 Nov. Results will appear here.</p></div>
+    </div></div>
+  </div>
+</main>
+<footer class="dash-footer">&copy; <span data-year>2026</span> SpeakUp Stage · <a href="../pages/contact.html">Help &amp; support</a> · v1.1.0</footer>
+</div>
+<script src="../assets/js/plugins/bootstrap/bootstrap.bundle.min.js" defer></script>
+<script src="../assets/js/plugins/chartjs/chart.umd.min.js" defer></script>
+<script src="../assets/js/main.js" defer></script>
+<script src="../assets/js/dashboard.js" defer></script>
+</body>
+</html>

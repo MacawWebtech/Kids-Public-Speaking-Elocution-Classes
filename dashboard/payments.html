@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Payments &amp; Invoices | SpeakUp Stage Parent Dashboard</title>
+<meta name="description" content="Pay SpeakUp Stage fees online by card, UPI or PayPal, switch between monthly and term fee plans, view your payment history and download receipts instantly.">
+<link rel="canonical" href="https://www.speakupstage.example/dashboard/payments.html">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1B2A4E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SpeakUp Stage">
+<meta property="og:title" content="Payments &amp; Invoices | SpeakUp Stage Parent Dashboard">
+<meta property="og:description" content="Pay SpeakUp Stage fees online by card, UPI or PayPal, switch between monthly and term fee plans, view your payment history and download receipts instantly.">
+<meta property="og:url" content="https://www.speakupstage.example/dashboard/payments.html">
+<meta property="og:image" content="../assets/images/banner.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+<!-- Prevent theme/direction flash: read saved preferences before CSS paints -->
+<script>(function(){var d=document.documentElement,t=null,r=null;try{t=localStorage.getItem('su-theme');r=localStorage.getItem('su-dir');}catch(e){}d.setAttribute('data-theme',t||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));if(r==='rtl'){d.setAttribute('dir','rtl');d.setAttribute('lang','ar');}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- TODO: fonts. Swap families here and in the su-font custom properties (style.css) -->
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&amp;family=Caveat:wght@600&amp;family=Nunito:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<link id="bs-css" rel="stylesheet" href="../assets/js/plugins/bootstrap/bootstrap.min.css" data-ltr="../assets/js/plugins/bootstrap/bootstrap.min.css" data-rtl="../assets/js/plugins/bootstrap/bootstrap.rtl.min.css">
+<script>if(document.documentElement.dir==='rtl'){var b=document.getElementById('bs-css');b.href=b.getAttribute('data-rtl');}</script>
+<link rel="stylesheet" href="../assets/js/plugins/bootstrap-icons/bootstrap-icons.min.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/dashboard.css">
+<link rel="stylesheet" href="../assets/css/dark-mode.css">
+<link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body class="dash-body">
+<a class="skip-link" href="#main">Skip to main content</a>
+<aside class="dash-sidebar" id="dashSidebar" aria-label="Dashboard navigation">
+  <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><i class="bi bi-mic-fill"></i></span><span>SpeakUp Stage<small>parent portal</small></span></a>
+  <nav aria-label="Dashboard sections"><p class="side-label">Main</p><ul class="side-nav"><li><a class="side-link" href="index.html"><i class="bi bi-house-door" aria-hidden="true"></i><span>Overview</span></a></li><li><a class="side-link" href="children.html"><i class="bi bi-people" aria-hidden="true"></i><span>My Children</span></a></li><li><a class="side-link" href="enrol.html"><i class="bi bi-pencil-square" aria-hidden="true"></i><span>Enrol in Batches</span></a></li><li><a class="side-link" href="progress.html"><i class="bi bi-graph-up-arrow" aria-hidden="true"></i><span>Progress Tracker</span></a></li></ul><p class="side-label">Plan</p><ul class="side-nav"><li><a class="side-link" href="schedule.html"><i class="bi bi-calendar3" aria-hidden="true"></i><span>Schedule</span></a></li><li><a class="side-link" href="competitions.html"><i class="bi bi-trophy" aria-hidden="true"></i><span>Competitions</span></a></li><li><a class="side-link active" aria-current="page" href="payments.html"><i class="bi bi-wallet2" aria-hidden="true"></i><span>Payments</span><span class="count">1<span class="visually-hidden"> new</span></span></a></li><li><a class="side-link" href="messages.html"><i class="bi bi-chat-dots" aria-hidden="true"></i><span>Messages</span><span class="count">3<span class="visually-hidden"> new</span></span></a></li></ul><p class="side-label">Account</p><ul class="side-nav"><li><a class="side-link" href="settings.html"><i class="bi bi-gear" aria-hidden="true"></i><span>Settings</span></a></li></ul></nav>
+  <div class="side-help mt-4"><strong>Need help?</strong>Our parent desk replies within 2 hours on WhatsApp.<a class="d-flex align-items-center gap-2 mt-2 fw-800 text-decoration-none" style="color:var(--su-orange);min-height:44px" href="https://wa.me/919840012345"><i class="bi bi-whatsapp" aria-hidden="true"></i> Chat with us</a></div>
+  <ul class="side-nav mt-3"><li><a class="side-link" href="../index.html"><i class="bi bi-globe2" aria-hidden="true"></i><span>Back to website</span></a></li><li><a class="side-link" href="../pages/login.html"><i class="bi bi-box-arrow-left" aria-hidden="true"></i><span>Log out</span></a></li></ul>
+</aside>
+<div class="dash-backdrop" data-dash-close></div>
+<div class="dash-main">
+<header class="dash-topbar">
+  <button class="tool-btn dash-menu-btn" type="button" data-dash-toggle aria-controls="dashSidebar" aria-expanded="false" aria-label="Open dashboard menu"><i class="bi bi-list" aria-hidden="true"></i></button>
+  <form class="search" role="search" action="enrol.html"><label class="visually-hidden" for="dash-q">Search batches, coaches, invoices</label><i class="bi bi-search" aria-hidden="true"></i><input class="form-control" id="dash-q" type="search" name="q" placeholder="Search batches, coaches, invoices"></form>
+  <div class="dash-user">
+    <button class="tool-btn" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to dark mode"><i class="bi bi-moon-stars-fill" aria-hidden="true"></i></button>
+    <button class="tool-btn" type="button" data-rtl-toggle aria-pressed="false" aria-label="Switch to right-to-left layout"><span class="rtl-label">RTL</span></button>
+    <a class="tool-btn notif-dot" href="messages.html" aria-label="Messages, 3 unread"><i class="bi bi-bell" aria-hidden="true"></i></a>
+    <a class="d-flex align-items-center gap-2 text-decoration-none" href="settings.html"><img src="../assets/images/review1.jpg" alt="" width="160" height="160" loading="lazy" decoding="async"><span class="who"><strong>Lakshmi Venkatesh</strong><span>Parent · 2 children</span></span><span class="visually-hidden">Account settings</span></a>
+  </div>
+</header>
+<main class="dash-content" id="main" tabindex="-1">
+  <div class="dash-title"><div><h1>Payments</h1><p>Invoices, fee plans and receipts.</p></div><div class="d-flex gap-2 flex-wrap"></div></div>
+
+  <div class="row g-4">
+    <div class="col-xl-5"><div class="panel">
+      <div class="panel-head"><h2><i class="bi bi-receipt" aria-hidden="true"></i> Due now</h2><span class="su-badge b-orange">Due 15 Oct</span></div>
+      <div class="d-flex justify-content-between align-items-end mb-3"><div><div class="small text-muted-su fw-800">INV-2026-1012 · Diya, October</div><div class="font-head fw-800 text-navy" style="font-size:2.4rem;line-height:1">₹2,499</div></div><span class="small text-muted-su">GST incl.</span></div>
+      <!-- TODO: Stripe Checkout / PayPal Smart Buttons: wire these to your payment backend -->
+      <div class="pay-methods mb-3"><button class="pay-btn stripe" type="button" data-demo-toast="Stripe Checkout placeholder: connect your Stripe key." data-icon="bi-credit-card"><i class="bi bi-credit-card" aria-hidden="true"></i> Pay with card</button><button class="pay-btn paypal" type="button" data-demo-toast="PayPal placeholder: add your PayPal client ID." data-icon="bi-paypal"><i class="bi bi-paypal" aria-hidden="true"></i> PayPal</button></div>
+      <button class="pay-btn w-100" type="button" data-demo-toast="UPI placeholder: show your QR or intent link here." data-icon="bi-qr-code"><i class="bi bi-qr-code" aria-hidden="true"></i> Pay by UPI</button>
+      <hr class="my-4">
+      <div class="d-flex justify-content-between"><span>Diya · Storytelling Fest entry</span><strong>₹300</strong></div><p class="small text-muted-su mb-0">Added to next invoice</p>
+    </div></div>
+    <div class="col-xl-7"><div class="panel">
+      <div class="panel-head"><h2><i class="bi bi-sliders" aria-hidden="true"></i> Fee plans</h2></div>
+      <form class="su-form" data-toast="Plan updated. Changes apply from the next billing date." aria-label="Choose fee plans">
+        <fieldset class="mb-3"><legend class="h6 fw-800">Diya · Young Speakers</legend><div class="row g-3">
+          <label class="plan-option col-sm-6"><input type="radio" name="plan-diya" value="monthly" checked><span class="po d-block"><strong class="d-block text-navy">Monthly · ₹2,499</strong><span class="small text-muted-su">Current plan</span></span></label>
+          <label class="plan-option col-sm-6"><input type="radio" name="plan-diya" value="term"><span class="po d-block"><strong class="d-block text-navy">Term · ₹13,500</strong><span class="small text-muted-su">Save ₹1,494 this term</span></span></label></div></fieldset>
+        <fieldset class="mb-3"><legend class="h6 fw-800">Arjun · Rising Orators <span class="su-badge b-teal ms-1">Sibling −15%</span></legend><div class="row g-3">
+          <label class="plan-option col-sm-6"><input type="radio" name="plan-arjun" value="monthly" checked><span class="po d-block"><strong class="d-block text-navy">Monthly · ₹2,549</strong><span class="small text-muted-su">Current plan</span></span></label>
+          <label class="plan-option col-sm-6"><input type="radio" name="plan-arjun" value="term"><span class="po d-block"><strong class="d-block text-navy">Term · ₹13,770</strong><span class="small text-muted-su">16 weeks</span></span></label></div></fieldset>
+        <button class="btn btn-su-navy" type="submit">Save plans</button>
+      </form>
+    </div></div>
+    <div class="col-12"><div class="panel">
+      <div class="panel-head"><h2><i class="bi bi-clock-history" aria-hidden="true"></i> Payment history</h2><button class="btn btn-su-ghost btn-sm" type="button" data-download="speakup-payments-2026.csv" data-content="Invoice,Date,Item,Amount,Method&#10;INV-2026-0912,15 Sep 2026,Diya · Young Speakers, Sep,INR 2499,UPI&#10;INV-2026-0911,15 Sep 2026,Arjun · Rising Orators, Sep,INR 2549,Card&#10;INV-2026-0838,28 Aug 2026,Diya · Kids Lit Fest entry,INR 300,UPI&#10;INV-2026-0815,15 Aug 2026,Diya · Young Speakers, Aug,INR 2499,PayPal&#10;INV-2026-0814,15 Aug 2026,Arjun · Rising Orators, Aug,INR 2549,Card"><i class="bi bi-filetype-csv" aria-hidden="true"></i> Export CSV</button></div>
+      <div class="table-responsive"><table class="table table-su table-hover align-middle mb-0"><caption class="visually-hidden">Payment history</caption><thead><tr><th scope="col">Invoice</th><th scope="col">Date</th><th scope="col">Item</th><th scope="col">Amount</th><th scope="col">Method</th><th scope="col">Status</th><th scope="col"><span class="visually-hidden">Receipt</span></th></tr></thead><tbody><tr><td class="fw-bold">INV-2026-0912</td><td>15 Sep 2026</td><td>Diya · Young Speakers, Sep</td><td>₹2,499</td><td>UPI</td><td><span class="su-badge b-teal">Paid</span></td><td><button class="btn btn-su-ghost btn-sm" type="button" data-download="INV-2026-0912-receipt.txt" data-content="SpeakUp Stage receipt INV-2026-0912&#10;Date: 15 Sep 2026&#10;Item: Diya · Young Speakers, Sep&#10;Amount: ₹2,499&#10;Method: UPI&#10;Status: Paid"><i class="bi bi-download" aria-hidden="true"></i><span class="visually-hidden">Download receipt INV-2026-0912</span></button></td></tr><tr><td class="fw-bold">INV-2026-0911</td><td>15 Sep 2026</td><td>Arjun · Rising Orators, Sep</td><td>₹2,549</td><td>Card</td><td><span class="su-badge b-teal">Paid</span></td><td><button class="btn btn-su-ghost btn-sm" type="button" data-download="INV-2026-0911-receipt.txt" data-content="SpeakUp Stage receipt INV-2026-0911&#10;Date: 15 Sep 2026&#10;Item: Arjun · Rising Orators, Sep&#10;Amount: ₹2,549&#10;Method: Card&#10;Status: Paid"><i class="bi bi-download" aria-hidden="true"></i><span class="visually-hidden">Download receipt INV-2026-0911</span></button></td></tr><tr><td class="fw-bold">INV-2026-0838</td><td>28 Aug 2026</td><td>Diya · Kids Lit Fest entry</td><td>₹300</td><td>UPI</td><td><span class="su-badge b-teal">Paid</span></td><td><button class="btn btn-su-ghost btn-sm" type="button" data-download="INV-2026-0838-receipt.txt" data-content="SpeakUp Stage receipt INV-2026-0838&#10;Date: 28 Aug 2026&#10;Item: Diya · Kids Lit Fest entry&#10;Amount: ₹300&#10;Method: UPI&#10;Status: Paid"><i class="bi bi-download" aria-hidden="true"></i><span class="visually-hidden">Download receipt INV-2026-0838</span></button></td></tr><tr><td class="fw-bold">INV-2026-0815</td><td>15 Aug 2026</td><td>Diya · Young Speakers, Aug</td><td>₹2,499</td><td>PayPal</td><td><span class="su-badge b-teal">Paid</span></td><td><button class="btn btn-su-ghost btn-sm" type="button" data-download="INV-2026-0815-receipt.txt" data-content="SpeakUp Stage receipt INV-2026-0815&#10;Date: 15 Aug 2026&#10;Item: Diya · Young Speakers, Aug&#10;Amount: ₹2,499&#10;Method: PayPal&#10;Status: Paid"><i class="bi bi-download" aria-hidden="true"></i><span class="visually-hidden">Download receipt INV-2026-0815</span></button></td></tr><tr><td class="fw-bold">INV-2026-0814</td><td>15 Aug 2026</td><td>Arjun · Rising Orators, Aug</td><td>₹2,549</td><td>Card</td><td><span class="su-badge b-teal">Paid</span></td><td><button class="btn btn-su-ghost btn-sm" type="button" data-download="INV-2026-0814-receipt.txt" data-content="SpeakUp Stage receipt INV-2026-0814&#10;Date: 15 Aug 2026&#10;Item: Arjun · Rising Orators, Aug&#10;Amount: ₹2,549&#10;Method: Card&#10;Status: Paid"><i class="bi bi-download" aria-hidden="true"></i><span class="visually-hidden">Download receipt INV-2026-0814</span></button></td></tr></tbody></table></div>
+    </div></div>
+  </div>
+</main>
+<footer class="dash-footer">&copy; <span data-year>2026</span> SpeakUp Stage · <a href="../pages/contact.html">Help &amp; support</a> · v1.1.0</footer>
+</div>
+<script src="../assets/js/plugins/bootstrap/bootstrap.bundle.min.js" defer></script>
+<script src="../assets/js/plugins/chartjs/chart.umd.min.js" defer></script>
+<script src="../assets/js/main.js" defer></script>
+<script src="../assets/js/dashboard.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Messages | SpeakUp Stage Parent Dashboard</title>
+<meta name="description" content="Message your children&#x27;s SpeakUp Stage coaches directly, read academy announcements about showcases, holidays and competitions, and keep every update together.">
+<link rel="canonical" href="https://www.speakupstage.example/dashboard/messages.html">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1B2A4E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SpeakUp Stage">
+<meta property="og:title" content="Messages | SpeakUp Stage Parent Dashboard">
+<meta property="og:description" content="Message your children&#x27;s SpeakUp Stage coaches directly, read academy announcements about showcases, holidays and competitions, and keep every update together.">
+<meta property="og:url" content="https://www.speakupstage.example/dashboard/messages.html">
+<meta property="og:image" content="../assets/images/banner.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+<!-- Prevent theme/direction flash: read saved preferences before CSS paints -->
+<script>(function(){var d=document.documentElement,t=null,r=null;try{t=localStorage.getItem('su-theme');r=localStorage.getItem('su-dir');}catch(e){}d.setAttribute('data-theme',t||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));if(r==='rtl'){d.setAttribute('dir','rtl');d.setAttribute('lang','ar');}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- TODO: fonts. Swap families here and in the su-font custom properties (style.css) -->
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&amp;family=Caveat:wght@600&amp;family=Nunito:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<link id="bs-css" rel="stylesheet" href="../assets/js/plugins/bootstrap/bootstrap.min.css" data-ltr="../assets/js/plugins/bootstrap/bootstrap.min.css" data-rtl="../assets/js/plugins/bootstrap/bootstrap.rtl.min.css">
+<script>if(document.documentElement.dir==='rtl'){var b=document.getElementById('bs-css');b.href=b.getAttribute('data-rtl');}</script>
+<link rel="stylesheet" href="../assets/js/plugins/bootstrap-icons/bootstrap-icons.min.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/dashboard.css">
+<link rel="stylesheet" href="../assets/css/dark-mode.css">
+<link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body class="dash-body">
+<a class="skip-link" href="#main">Skip to main content</a>
+<aside class="dash-sidebar" id="dashSidebar" aria-label="Dashboard navigation">
+  <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><i class="bi bi-mic-fill"></i></span><span>SpeakUp Stage<small>parent portal</small></span></a>
+  <nav aria-label="Dashboard sections"><p class="side-label">Main</p><ul class="side-nav"><li><a class="side-link" href="index.html"><i class="bi bi-house-door" aria-hidden="true"></i><span>Overview</span></a></li><li><a class="side-link" href="children.html"><i class="bi bi-people" aria-hidden="true"></i><span>My Children</span></a></li><li><a class="side-link" href="enrol.html"><i class="bi bi-pencil-square" aria-hidden="true"></i><span>Enrol in Batches</span></a></li><li><a class="side-link" href="progress.html"><i class="bi bi-graph-up-arrow" aria-hidden="true"></i><span>Progress Tracker</span></a></li></ul><p class="side-label">Plan</p><ul class="side-nav"><li><a class="side-link" href="schedule.html"><i class="bi bi-calendar3" aria-hidden="true"></i><span>Schedule</span></a></li><li><a class="side-link" href="competitions.html"><i class="bi bi-trophy" aria-hidden="true"></i><span>Competitions</span></a></li><li><a class="side-link" href="payments.html"><i class="bi bi-wallet2" aria-hidden="true"></i><span>Payments</span><span class="count">1<span class="visually-hidden"> new</span></span></a></li><li><a class="side-link active" aria-current="page" href="messages.html"><i class="bi bi-chat-dots" aria-hidden="true"></i><span>Messages</span><span class="count">3<span class="visually-hidden"> new</span></span></a></li></ul><p class="side-label">Account</p><ul class="side-nav"><li><a class="side-link" href="settings.html"><i class="bi bi-gear" aria-hidden="true"></i><span>Settings</span></a></li></ul></nav>
+  <div class="side-help mt-4"><strong>Need help?</strong>Our parent desk replies within 2 hours on WhatsApp.<a class="d-flex align-items-center gap-2 mt-2 fw-800 text-decoration-none" style="color:var(--su-orange);min-height:44px" href="https://wa.me/919840012345"><i class="bi bi-whatsapp" aria-hidden="true"></i> Chat with us</a></div>
+  <ul class="side-nav mt-3"><li><a class="side-link" href="../index.html"><i class="bi bi-globe2" aria-hidden="true"></i><span>Back to website</span></a></li><li><a class="side-link" href="../pages/login.html"><i class="bi bi-box-arrow-left" aria-hidden="true"></i><span>Log out</span></a></li></ul>
+</aside>
+<div class="dash-backdrop" data-dash-close></div>
+<div class="dash-main">
+<header class="dash-topbar">
+  <button class="tool-btn dash-menu-btn" type="button" data-dash-toggle aria-controls="dashSidebar" aria-expanded="false" aria-label="Open dashboard menu"><i class="bi bi-list" aria-hidden="true"></i></button>
+  <form class="search" role="search" action="enrol.html"><label class="visually-hidden" for="dash-q">Search batches, coaches, invoices</label><i class="bi bi-search" aria-hidden="true"></i><input class="form-control" id="dash-q" type="search" name="q" placeholder="Search batches, coaches, invoices"></form>
+  <div class="dash-user">
+    <button class="tool-btn" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to dark mode"><i class="bi bi-moon-stars-fill" aria-hidden="true"></i></button>
+    <button class="tool-btn" type="button" data-rtl-toggle aria-pressed="false" aria-label="Switch to right-to-left layout"><span class="rtl-label">RTL</span></button>
+    <a class="tool-btn notif-dot" href="messages.html" aria-label="Messages, 3 unread"><i class="bi bi-bell" aria-hidden="true"></i></a>
+    <a class="d-flex align-items-center gap-2 text-decoration-none" href="settings.html"><img src="../assets/images/review1.jpg" alt="" width="160" height="160" loading="lazy" decoding="async"><span class="who"><strong>Lakshmi Venkatesh</strong><span>Parent · 2 children</span></span><span class="visually-hidden">Account settings</span></a>
+  </div>
+</header>
+<main class="dash-content" id="main" tabindex="-1">
+  <div class="dash-title"><div><h1>Messages</h1><p>Chat with coaches and read announcements.</p></div><div class="d-flex gap-2 flex-wrap"></div></div>
+
+  <div class="msg-layout">
+    <div class="panel">
+      <div class="field mb-3"><label class="visually-hidden" for="th-search">Search messages</label><input class="form-control" type="search" id="th-search" placeholder="Search messages"></div>
+      <ul class="thread-list" aria-label="Conversations"><li><button class="thread unread" type="button" aria-current="true"><img src="../assets/images/meera%20iyer.jpg" alt="" width="160" height="160" loading="lazy" decoding="async"><span class="flex-grow-1 min-w-0"><strong>Meera Iyer</strong><span>Diya's coach: Lovely! Ask her to practise the owl voice…</span></span><span class="time">2:14 PM</span></button></li><li><button class="thread unread" type="button"><img src="../assets/images/priya.jpg" alt="" width="160" height="160" loading="lazy" decoding="async"><span class="flex-grow-1 min-w-0"><strong>Priya Nair</strong><span>Arjun's coach: Competition piece is approved</span></span><span class="time">Yesterday</span></button></li><li><button class="thread unread" type="button"><span class="t-ico t-orange" aria-hidden="true"><i class="bi bi-megaphone"></i></span><span class="flex-grow-1 min-w-0"><strong>SpeakUp Stage</strong><span>Announcements: Diwali break: no classes 7–9 Nov</span></span><span class="time">Mon</span></button></li><li><button class="thread" type="button"><img src="../assets/images/ananya%20rao.jpg" alt="" width="160" height="160" loading="lazy" decoding="async"><span class="flex-grow-1 min-w-0"><strong>Ananya Rao</strong><span>Head coach: Thank you for the feedback form!</span></span><span class="time">28 Sep</span></button></li></ul>
+      <div class="panel announce mt-3 p-3"><strong class="d-block text-navy"><i class="bi bi-megaphone text-orange" aria-hidden="true"></i> Pinned announcement</strong><span class="small">Showcase on 31 Oct, 4 PM. Families welcome, max 3 guests per child.</span></div>
+    </div>
+    <div class="panel chat">
+      <div class="chat-head"><img src="../assets/images/meera%20iyer.jpg" alt="Meera Iyer" width="160" height="160" loading="lazy" decoding="async"><div><strong class="d-block text-navy font-head fs-5">Meera Iyer</strong><span class="small text-muted-su"><i class="bi bi-circle-fill text-teal" style="font-size:.5rem" aria-hidden="true"></i> Online · replies in ~1 hour</span></div></div>
+      <div class="chat-log" id="chatLog" role="log" aria-live="polite" aria-label="Conversation with Meera Iyer" tabindex="0">
+        <span class="chat-day">Thursday</span>
+        <div class="msg-bubble them">Hi Lakshmi! Diya did really well with her poem today. She's ready for the showcase.<small>1:52 PM</small></div>
+        <div class="msg-bubble me">That's wonderful! She's been practising in front of her grandmother every evening.<small>2:05 PM</small></div>
+        <div class="msg-bubble them">Lovely! Ask her to practise the owl voice slowly. It will make the ending land.<small>2:14 PM</small></div>
+      </div>
+      <form class="chat-form" id="chatForm" aria-label="Send a message"><label class="visually-hidden" for="chatInput">Message</label><input class="form-control" id="chatInput" placeholder="Write a message…" autocomplete="off"><button class="btn btn-su-primary" type="submit" aria-label="Send message"><i class="bi bi-send-fill" aria-hidden="true"></i></button></form>
+    </div>
+  </div>
+</main>
+<footer class="dash-footer">&copy; <span data-year>2026</span> SpeakUp Stage · <a href="../pages/contact.html">Help &amp; support</a> · v1.1.0</footer>
+</div>
+<script src="../assets/js/plugins/bootstrap/bootstrap.bundle.min.js" defer></script>
+<script src="../assets/js/plugins/chartjs/chart.umd.min.js" defer></script>
+<script src="../assets/js/main.js" defer></script>
+<script src="../assets/js/dashboard.js" defer></script>
+</body>
+</html>

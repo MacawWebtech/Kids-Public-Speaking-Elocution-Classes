@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Class Schedule | SpeakUp Stage Parent Dashboard</title>
+<meta name="description" content="See every upcoming SpeakUp Stage class, showcase and competition for your children in a calendar and list, add them to your calendar and switch on reminders.">
+<link rel="canonical" href="https://www.speakupstage.example/dashboard/schedule.html">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1B2A4E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SpeakUp Stage">
+<meta property="og:title" content="Class Schedule | SpeakUp Stage Parent Dashboard">
+<meta property="og:description" content="See every upcoming SpeakUp Stage class, showcase and competition for your children in a calendar and list, add them to your calendar and switch on reminders.">
+<meta property="og:url" content="https://www.speakupstage.example/dashboard/schedule.html">
+<meta property="og:image" content="../assets/images/banner.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+<!-- Prevent theme/direction flash: read saved preferences before CSS paints -->
+<script>(function(){var d=document.documentElement,t=null,r=null;try{t=localStorage.getItem('su-theme');r=localStorage.getItem('su-dir');}catch(e){}d.setAttribute('data-theme',t||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));if(r==='rtl'){d.setAttribute('dir','rtl');d.setAttribute('lang','ar');}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- TODO: fonts. Swap families here and in the su-font custom properties (style.css) -->
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&amp;family=Caveat:wght@600&amp;family=Nunito:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<link id="bs-css" rel="stylesheet" href="../assets/js/plugins/bootstrap/bootstrap.min.css" data-ltr="../assets/js/plugins/bootstrap/bootstrap.min.css" data-rtl="../assets/js/plugins/bootstrap/bootstrap.rtl.min.css">
+<script>if(document.documentElement.dir==='rtl'){var b=document.getElementById('bs-css');b.href=b.getAttribute('data-rtl');}</script>
+<link rel="stylesheet" href="../assets/js/plugins/bootstrap-icons/bootstrap-icons.min.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/dashboard.css">
+<link rel="stylesheet" href="../assets/css/dark-mode.css">
+<link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body class="dash-body">
+<a class="skip-link" href="#main">Skip to main content</a>
+<aside class="dash-sidebar" id="dashSidebar" aria-label="Dashboard navigation">
+  <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><i class="bi bi-mic-fill"></i></span><span>SpeakUp Stage<small>parent portal</small></span></a>
+  <nav aria-label="Dashboard sections"><p class="side-label">Main</p><ul class="side-nav"><li><a class="side-link" href="index.html"><i class="bi bi-house-door" aria-hidden="true"></i><span>Overview</span></a></li><li><a class="side-link" href="children.html"><i class="bi bi-people" aria-hidden="true"></i><span>My Children</span></a></li><li><a class="side-link" href="enrol.html"><i class="bi bi-pencil-square" aria-hidden="true"></i><span>Enrol in Batches</span></a></li><li><a class="side-link" href="progress.html"><i class="bi bi-graph-up-arrow" aria-hidden="true"></i><span>Progress Tracker</span></a></li></ul><p class="side-label">Plan</p><ul class="side-nav"><li><a class="side-link active" aria-current="page" href="schedule.html"><i class="bi bi-calendar3" aria-hidden="true"></i><span>Schedule</span></a></li><li><a class="side-link" href="competitions.html"><i class="bi bi-trophy" aria-hidden="true"></i><span>Competitions</span></a></li><li><a class="side-link" href="payments.html"><i class="bi bi-wallet2" aria-hidden="true"></i><span>Payments</span><span class="count">1<span class="visually-hidden"> new</span></span></a></li><li><a class="side-link" href="messages.html"><i class="bi bi-chat-dots" aria-hidden="true"></i><span>Messages</span><span class="count">3<span class="visually-hidden"> new</span></span></a></li></ul><p class="side-label">Account</p><ul class="side-nav"><li><a class="side-link" href="settings.html"><i class="bi bi-gear" aria-hidden="true"></i><span>Settings</span></a></li></ul></nav>
+  <div class="side-help mt-4"><strong>Need help?</strong>Our parent desk replies within 2 hours on WhatsApp.<a class="d-flex align-items-center gap-2 mt-2 fw-800 text-decoration-none" style="color:var(--su-orange);min-height:44px" href="https://wa.me/919840012345"><i class="bi bi-whatsapp" aria-hidden="true"></i> Chat with us</a></div>
+  <ul class="side-nav mt-3"><li><a class="side-link" href="../index.html"><i class="bi bi-globe2" aria-hidden="true"></i><span>Back to website</span></a></li><li><a class="side-link" href="../pages/login.html"><i class="bi bi-box-arrow-left" aria-hidden="true"></i><span>Log out</span></a></li></ul>
+</aside>
+<div class="dash-backdrop" data-dash-close></div>
+<div class="dash-main">
+<header class="dash-topbar">
+  <button class="tool-btn dash-menu-btn" type="button" data-dash-toggle aria-controls="dashSidebar" aria-expanded="false" aria-label="Open dashboard menu"><i class="bi bi-list" aria-hidden="true"></i></button>
+  <form class="search" role="search" action="enrol.html"><label class="visually-hidden" for="dash-q">Search batches, coaches, invoices</label><i class="bi bi-search" aria-hidden="true"></i><input class="form-control" id="dash-q" type="search" name="q" placeholder="Search batches, coaches, invoices"></form>
+  <div class="dash-user">
+    <button class="tool-btn" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to dark mode"><i class="bi bi-moon-stars-fill" aria-hidden="true"></i></button>
+    <button class="tool-btn" type="button" data-rtl-toggle aria-pressed="false" aria-label="Switch to right-to-left layout"><span class="rtl-label">RTL</span></button>
+    <a class="tool-btn notif-dot" href="messages.html" aria-label="Messages, 3 unread"><i class="bi bi-bell" aria-hidden="true"></i></a>
+    <a class="d-flex align-items-center gap-2 text-decoration-none" href="settings.html"><img src="../assets/images/review1.jpg" alt="" width="160" height="160" loading="lazy" decoding="async"><span class="who"><strong>Lakshmi Venkatesh</strong><span>Parent · 2 children</span></span><span class="visually-hidden">Account settings</span></a>
+  </div>
+</header>
+<main class="dash-content" id="main" tabindex="-1">
+  <div class="dash-title"><div><h1>Schedule</h1><p>Classes and competitions for both children.</p></div><div class="d-flex gap-2 flex-wrap"><button class="btn btn-su-ghost btn-sm" type="button" data-demo-toast="Calendar sync placeholder: connect Google Calendar via your backend." data-icon="bi-google"><i class="bi bi-arrow-repeat" aria-hidden="true"></i> Sync Google Calendar</button></div></div>
+
+  <div class="row g-4">
+    <div class="col-xl-5"><div class="d-grid gap-4"><div class="cal" data-month="2026-10" data-events="2026-10-10:class:Young Speakers · Week 7|2026-10-10:class:Rising Orators · Week 7|2026-10-17:class:Young Speakers · Week 8|2026-10-17:class:Rising Orators · Week 8|2026-10-31:comp:Monthly showcase|2026-11-08:comp:State Junior Elocution Championship|2026-11-22:comp:Little Voices Storytelling Fest" data-detail="sch-detail"></div><div class="panel"><h2 class="h6 fw-800">Selected day</h2><p id="sch-detail" class="mb-0 text-muted-su" aria-live="polite">Tap a highlighted date.</p></div></div></div>
+    <div class="col-xl-7"><div class="panel" data-filter-root>
+      <div class="panel-head"><h2><i class="bi bi-list-ul" aria-hidden="true"></i> Upcoming</h2>
+        <div class="filter-bar" data-filter-key="type" role="group" aria-label="Filter schedule"><button class="filter-chip active" type="button" data-value="all" aria-pressed="true">All</button><button class="filter-chip" type="button" data-value="class" aria-pressed="false">Classes</button><button class="filter-chip" type="button" data-value="comp" aria-pressed="false">Events</button></div></div>
+      <div class="session-row" data-item data-type="class"><div class="date-badge"><span class="m">Oct</span><span class="d">10</span></div><div>
+  <h3>Young Speakers · Week 7</h3><div class="meta">Diya · 10:00–11:00 AM · Studio</div>
+  <div class="session-actions"><button class="btn btn-su-ghost btn-sm" type="button" data-ics data-title="Young Speakers · Week 7" data-start="2026-10-10T10:00" data-end="2026-10-10T11:00" data-location="SpeakUp Stage"><i class="bi bi-calendar-plus" aria-hidden="true"></i> Add to calendar</button>
+  <div class="form-check form-switch m-0"><input class="form-check-input" type="checkbox" role="switch" id="rem-0" checked data-reminder="Young Speakers · Week 7"><label class="form-check-label small" for="rem-0">Reminder</label></div></div></div></div><div class="session-row" data-item data-type="class"><div class="date-badge"><span class="m">Oct</span><span class="d">10</span></div><div>
+  <h3>Rising Orators · Week 7</h3><div class="meta">Arjun · 11:30 AM–12:45 PM · Studio</div>
+  <div class="session-actions"><button class="btn btn-su-ghost btn-sm" type="button" data-ics data-title="Rising Orators · Week 7" data-start="2026-10-10T11:30" data-end="2026-10-10T12:45" data-location="SpeakUp Stage"><i class="bi bi-calendar-plus" aria-hidden="true"></i> Add to calendar</button>
+  <div class="form-check form-switch m-0"><input class="form-check-input" type="checkbox" role="switch" id="rem-1" checked data-reminder="Rising Orators · Week 7"><label class="form-check-label small" for="rem-1">Reminder</label></div></div></div></div><div class="session-row" data-item data-type="class"><div class="date-badge"><span class="m">Oct</span><span class="d">17</span></div><div>
+  <h3>Young Speakers · Week 8</h3><div class="meta">Diya · 10:00–11:00 AM · Studio</div>
+  <div class="session-actions"><button class="btn btn-su-ghost btn-sm" type="button" data-ics data-title="Young Speakers · Week 8" data-start="2026-10-17T10:00" data-end="2026-10-17T11:00" data-location="SpeakUp Stage"><i class="bi bi-calendar-plus" aria-hidden="true"></i> Add to calendar</button>
+  <div class="form-check form-switch m-0"><input class="form-check-input" type="checkbox" role="switch" id="rem-2"  data-reminder="Young Speakers · Week 8"><label class="form-check-label small" for="rem-2">Reminder</label></div></div></div></div><div class="session-row" data-item data-type="class"><div class="date-badge"><span class="m">Oct</span><span class="d">17</span></div><div>
+  <h3>Rising Orators · Week 8</h3><div class="meta">Arjun · 11:30 AM–12:45 PM · Studio</div>
+  <div class="session-actions"><button class="btn btn-su-ghost btn-sm" type="button" data-ics data-title="Rising Orators · Week 8" data-start="2026-10-17T11:30" data-end="2026-10-17T12:45" data-location="SpeakUp Stage"><i class="bi bi-calendar-plus" aria-hidden="true"></i> Add to calendar</button>
+  <div class="form-check form-switch m-0"><input class="form-check-input" type="checkbox" role="switch" id="rem-3"  data-reminder="Rising Orators · Week 8"><label class="form-check-label small" for="rem-3">Reminder</label></div></div></div></div><div class="session-row" data-item data-type="comp"><div class="date-badge" style="background:var(--su-orange-700)"><span class="m" style="color:#fff">Oct</span><span class="d">31</span></div><div>
+  <h3>Monthly showcase</h3><div class="meta">Both · 4:00 PM · Studio stage</div>
+  <div class="session-actions"><button class="btn btn-su-ghost btn-sm" type="button" data-ics data-title="Monthly showcase" data-start="2026-10-31T16:00" data-end="2026-10-31T18:00" data-location="SpeakUp Stage"><i class="bi bi-calendar-plus" aria-hidden="true"></i> Add to calendar</button>
+  <div class="form-check form-switch m-0"><input class="form-check-input" type="checkbox" role="switch" id="rem-4" checked data-reminder="Monthly showcase"><label class="form-check-label small" for="rem-4">Reminder</label></div></div></div></div><div class="session-row" data-item data-type="comp"><div class="date-badge" style="background:var(--su-orange-700)"><span class="m" style="color:#fff">Nov</span><span class="d">08</span></div><div>
+  <h3>State Junior Elocution Championship</h3><div class="meta">Arjun · 9:00 AM · Kamarajar Arangam</div>
+  <div class="session-actions"><button class="btn btn-su-ghost btn-sm" type="button" data-ics data-title="State Junior Elocution Championship" data-start="2026-11-08T09:00" data-end="2026-11-08T16:00" data-location="SpeakUp Stage"><i class="bi bi-calendar-plus" aria-hidden="true"></i> Add to calendar</button>
+  <div class="form-check form-switch m-0"><input class="form-check-input" type="checkbox" role="switch" id="rem-5" checked data-reminder="State Junior Elocution Championship"><label class="form-check-label small" for="rem-5">Reminder</label></div></div></div></div><div class="session-row" data-item data-type="comp"><div class="date-badge" style="background:var(--su-orange-700)"><span class="m" style="color:#fff">Nov</span><span class="d">22</span></div><div>
+  <h3>Little Voices Storytelling Fest</h3><div class="meta">Diya · 10:00 AM · SpeakUp Studio</div>
+  <div class="session-actions"><button class="btn btn-su-ghost btn-sm" type="button" data-ics data-title="Little Voices Storytelling Fest" data-start="2026-11-22T10:00" data-end="2026-11-22T13:00" data-location="SpeakUp Stage"><i class="bi bi-calendar-plus" aria-hidden="true"></i> Add to calendar</button>
+  <div class="form-check form-switch m-0"><input class="form-check-input" type="checkbox" role="switch" id="rem-6" checked data-reminder="Little Voices Storytelling Fest"><label class="form-check-label small" for="rem-6">Reminder</label></div></div></div></div>
+      <div class="empty-state no-results is-hidden" data-no-results><div class="es-ico" aria-hidden="true"><i class="bi bi-calendar"></i></div><h3>Nothing scheduled</h3><p>Enjoy the free time!</p></div>
+    </div></div>
+  </div>
+</main>
+<footer class="dash-footer">&copy; <span data-year>2026</span> SpeakUp Stage · <a href="../pages/contact.html">Help &amp; support</a> · v1.1.0</footer>
+</div>
+<script src="../assets/js/plugins/bootstrap/bootstrap.bundle.min.js" defer></script>
+<script src="../assets/js/plugins/chartjs/chart.umd.min.js" defer></script>
+<script src="../assets/js/main.js" defer></script>
+<script src="../assets/js/dashboard.js" defer></script>
+</body>
+</html>

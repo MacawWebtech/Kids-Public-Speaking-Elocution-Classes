@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enrol in Batches | SpeakUp Stage Parent Dashboard</title>
+<meta name="description" content="Browse SpeakUp Stage batches by age, day, time and format, see seats left, then enrol your child or switch batch in a few taps from the parent dashboard.">
+<link rel="canonical" href="https://www.speakupstage.example/dashboard/enrol.html">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1B2A4E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SpeakUp Stage">
+<meta property="og:title" content="Enrol in Batches | SpeakUp Stage Parent Dashboard">
+<meta property="og:description" content="Browse SpeakUp Stage batches by age, day, time and format, see seats left, then enrol your child or switch batch in a few taps from the parent dashboard.">
+<meta property="og:url" content="https://www.speakupstage.example/dashboard/enrol.html">
+<meta property="og:image" content="../assets/images/banner.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+<!-- Prevent theme/direction flash: read saved preferences before CSS paints -->
+<script>(function(){var d=document.documentElement,t=null,r=null;try{t=localStorage.getItem('su-theme');r=localStorage.getItem('su-dir');}catch(e){}d.setAttribute('data-theme',t||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));if(r==='rtl'){d.setAttribute('dir','rtl');d.setAttribute('lang','ar');}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- TODO: fonts. Swap families here and in the su-font custom properties (style.css) -->
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&amp;family=Caveat:wght@600&amp;family=Nunito:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<link id="bs-css" rel="stylesheet" href="../assets/js/plugins/bootstrap/bootstrap.min.css" data-ltr="../assets/js/plugins/bootstrap/bootstrap.min.css" data-rtl="../assets/js/plugins/bootstrap/bootstrap.rtl.min.css">
+<script>if(document.documentElement.dir==='rtl'){var b=document.getElementById('bs-css');b.href=b.getAttribute('data-rtl');}</script>
+<link rel="stylesheet" href="../assets/js/plugins/bootstrap-icons/bootstrap-icons.min.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/dashboard.css">
+<link rel="stylesheet" href="../assets/css/dark-mode.css">
+<link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body class="dash-body">
+<a class="skip-link" href="#main">Skip to main content</a>
+<aside class="dash-sidebar" id="dashSidebar" aria-label="Dashboard navigation">
+  <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><i class="bi bi-mic-fill"></i></span><span>SpeakUp Stage<small>parent portal</small></span></a>
+  <nav aria-label="Dashboard sections"><p class="side-label">Main</p><ul class="side-nav"><li><a class="side-link" href="index.html"><i class="bi bi-house-door" aria-hidden="true"></i><span>Overview</span></a></li><li><a class="side-link" href="children.html"><i class="bi bi-people" aria-hidden="true"></i><span>My Children</span></a></li><li><a class="side-link active" aria-current="page" href="enrol.html"><i class="bi bi-pencil-square" aria-hidden="true"></i><span>Enrol in Batches</span></a></li><li><a class="side-link" href="progress.html"><i class="bi bi-graph-up-arrow" aria-hidden="true"></i><span>Progress Tracker</span></a></li></ul><p class="side-label">Plan</p><ul class="side-nav"><li><a class="side-link" href="schedule.html"><i class="bi bi-calendar3" aria-hidden="true"></i><span>Schedule</span></a></li><li><a class="side-link" href="competitions.html"><i class="bi bi-trophy" aria-hidden="true"></i><span>Competitions</span></a></li><li><a class="side-link" href="payments.html"><i class="bi bi-wallet2" aria-hidden="true"></i><span>Payments</span><span class="count">1<span class="visually-hidden"> new</span></span></a></li><li><a class="side-link" href="messages.html"><i class="bi bi-chat-dots" aria-hidden="true"></i><span>Messages</span><span class="count">3<span class="visually-hidden"> new</span></span></a></li></ul><p class="side-label">Account</p><ul class="side-nav"><li><a class="side-link" href="settings.html"><i class="bi bi-gear" aria-hidden="true"></i><span>Settings</span></a></li></ul></nav>
+  <div class="side-help mt-4"><strong>Need help?</strong>Our parent desk replies within 2 hours on WhatsApp.<a class="d-flex align-items-center gap-2 mt-2 fw-800 text-decoration-none" style="color:var(--su-orange);min-height:44px" href="https://wa.me/919840012345"><i class="bi bi-whatsapp" aria-hidden="true"></i> Chat with us</a></div>
+  <ul class="side-nav mt-3"><li><a class="side-link" href="../index.html"><i class="bi bi-globe2" aria-hidden="true"></i><span>Back to website</span></a></li><li><a class="side-link" href="../pages/login.html"><i class="bi bi-box-arrow-left" aria-hidden="true"></i><span>Log out</span></a></li></ul>
+</aside>
+<div class="dash-backdrop" data-dash-close></div>
+<div class="dash-main">
+<header class="dash-topbar">
+  <button class="tool-btn dash-menu-btn" type="button" data-dash-toggle aria-controls="dashSidebar" aria-expanded="false" aria-label="Open dashboard menu"><i class="bi bi-list" aria-hidden="true"></i></button>
+  <form class="search" role="search" action="enrol.html"><label class="visually-hidden" for="dash-q">Search batches, coaches, invoices</label><i class="bi bi-search" aria-hidden="true"></i><input class="form-control" id="dash-q" type="search" name="q" placeholder="Search batches, coaches, invoices"></form>
+  <div class="dash-user">
+    <button class="tool-btn" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to dark mode"><i class="bi bi-moon-stars-fill" aria-hidden="true"></i></button>
+    <button class="tool-btn" type="button" data-rtl-toggle aria-pressed="false" aria-label="Switch to right-to-left layout"><span class="rtl-label">RTL</span></button>
+    <a class="tool-btn notif-dot" href="messages.html" aria-label="Messages, 3 unread"><i class="bi bi-bell" aria-hidden="true"></i></a>
+    <a class="d-flex align-items-center gap-2 text-decoration-none" href="settings.html"><img src="../assets/images/review1.jpg" alt="" width="160" height="160" loading="lazy" decoding="async"><span class="who"><strong>Lakshmi Venkatesh</strong><span>Parent · 2 children</span></span><span class="visually-hidden">Account settings</span></a>
+  </div>
+</header>
+<main class="dash-content" id="main" tabindex="-1">
+  <div class="dash-title"><div><h1>Enrol in batches</h1><p>Find a batch with seats, then enrol or switch in a few taps.</p></div><div class="d-flex gap-2 flex-wrap"></div></div>
+
+  <div class="panel mb-4" data-filter-root id="batch-finder">
+    <div class="row g-3 align-items-end mb-3">
+      <div class="col-sm-6 col-lg-3"><label class="form-label" for="b-age">Age group</label><select class="form-select" id="b-age" data-filter-key="age"><option value="all">All ages</option><option value="5-7">5–7</option><option value="8-10">8–10</option><option value="11-13">11–13</option><option value="14-16">14–16</option></select></div>
+      <div class="col-sm-6 col-lg-3"><label class="form-label" for="b-days">Day</label><select class="form-select" id="b-days" data-filter-key="days"><option value="all">Any day</option><option value="weekday">Weekdays</option><option value="weekend">Weekends</option></select></div>
+      <div class="col-sm-6 col-lg-3"><label class="form-label" for="b-time">Time</label><select class="form-select" id="b-time" data-filter-key="time"><option value="all">Any time</option><option value="morning">Morning</option><option value="evening">Afternoon / evening</option></select></div>
+      <div class="col-sm-6 col-lg-3"><label class="form-label" for="b-mode">Format</label><select class="form-select" id="b-mode" data-filter-key="mode"><option value="all">Online &amp; studio</option><option value="online">Online</option><option value="offline">Studio</option></select></div>
+    </div>
+    <p class="fw-800 mb-3" aria-live="polite"><span data-result-count>6</span> batches available</p>
+    <div data-skeleton="1000">
+      <div class="row g-4 sk-ph" aria-hidden="true"><div class="col-md-6 col-xxl-4"><div class="panel sk-ph" aria-hidden="true"><div class="d-flex gap-3 align-items-center mb-3"><div class="skeleton sk-circle"></div><div class="flex-grow-1"><div class="skeleton sk-title"></div><div class="skeleton sk-line w-60"></div></div></div><div class="skeleton sk-line"></div><div class="skeleton sk-line w-80"></div></div></div><div class="col-md-6 col-xxl-4"><div class="panel sk-ph" aria-hidden="true"><div class="d-flex gap-3 align-items-center mb-3"><div class="skeleton sk-circle"></div><div class="flex-grow-1"><div class="skeleton sk-title"></div><div class="skeleton sk-line w-60"></div></div></div><div class="skeleton sk-line"></div><div class="skeleton sk-line w-80"></div></div></div><div class="col-md-6 col-xxl-4"><div class="panel sk-ph" aria-hidden="true"><div class="d-flex gap-3 align-items-center mb-3"><div class="skeleton sk-circle"></div><div class="flex-grow-1"><div class="skeleton sk-title"></div><div class="skeleton sk-line w-60"></div></div></div><div class="skeleton sk-line"></div><div class="skeleton sk-line w-80"></div></div></div></div>
+      <div class="row g-4 sk-real d-flex-real"><div class="col-md-6 col-xxl-4" data-item data-age="8-10" data-days="weekday" data-time="evening" data-mode="offline">
+  <div class="panel batch-card">
+    <div class="d-flex justify-content-between mb-2"><span class="su-badge b-orange">Studio</span><span class="su-badge b-gray">YS-A</span></div>
+    <h2 class="h5 mb-1">Young Speakers <span class="text-muted-su fs-6">· 8–10 yrs</span></h2>
+    <ul class="pc-facts"><li><i class="bi bi-calendar3" aria-hidden="true"></i>Tuesday, 5:00–6:00 PM</li><li><i class="bi bi-person-video3" aria-hidden="true"></i>Meera Iyer</li></ul>
+    <div class="seats">3 of 8 seats left</div><div class="seat-bar" role="img" aria-label="5 of 8 seats taken"><span style="width:62%"></span></div>
+    <div class="d-flex gap-2"><button class="btn btn-su-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#enrolModal" data-batch="YS-A · Young Speakers · Tuesday 5:00–6:00 PM">Enrol</button><button class="btn btn-su-ghost btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#switchModal" data-batch="YS-A · Young Speakers · Tuesday 5:00–6:00 PM">Switch to this</button></div>
+  </div>
+</div><div class="col-md-6 col-xxl-4" data-item data-age="8-10" data-days="weekday" data-time="evening" data-mode="online">
+  <div class="panel batch-card">
+    <div class="d-flex justify-content-between mb-2"><span class="su-badge b-teal">Online</span><span class="su-badge b-gray">YS-C</span></div>
+    <h2 class="h5 mb-1">Young Speakers <span class="text-muted-su fs-6">· 8–10 yrs</span></h2>
+    <ul class="pc-facts"><li><i class="bi bi-calendar3" aria-hidden="true"></i>Thursday, 6:00–7:00 PM</li><li><i class="bi bi-person-video3" aria-hidden="true"></i>Daniel Fernandes</li></ul>
+    <div class="seats">5 of 8 seats left</div><div class="seat-bar" role="img" aria-label="3 of 8 seats taken"><span style="width:37%"></span></div>
+    <div class="d-flex gap-2"><button class="btn btn-su-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#enrolModal" data-batch="YS-C · Young Speakers · Thursday 6:00–7:00 PM">Enrol</button><button class="btn btn-su-ghost btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#switchModal" data-batch="YS-C · Young Speakers · Thursday 6:00–7:00 PM">Switch to this</button></div>
+  </div>
+</div><div class="col-md-6 col-xxl-4" data-item data-age="8-10" data-days="weekend" data-time="evening" data-mode="online">
+  <div class="panel batch-card">
+    <div class="d-flex justify-content-between mb-2"><span class="su-badge b-teal">Online</span><span class="su-badge b-gray">YS-D</span></div>
+    <h2 class="h5 mb-1">Young Speakers <span class="text-muted-su fs-6">· 8–10 yrs</span></h2>
+    <ul class="pc-facts"><li><i class="bi bi-calendar3" aria-hidden="true"></i>Sunday, 4:00–5:00 PM</li><li><i class="bi bi-person-video3" aria-hidden="true"></i>Meera Iyer</li></ul>
+    <div class="seats">2 of 8 seats left</div><div class="seat-bar low" role="img" aria-label="6 of 8 seats taken"><span style="width:75%"></span></div>
+    <div class="d-flex gap-2"><button class="btn btn-su-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#enrolModal" data-batch="YS-D · Young Speakers · Sunday 4:00–5:00 PM">Enrol</button><button class="btn btn-su-ghost btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#switchModal" data-batch="YS-D · Young Speakers · Sunday 4:00–5:00 PM">Switch to this</button></div>
+  </div>
+</div><div class="col-md-6 col-xxl-4" data-item data-age="11-13" data-days="weekend" data-time="morning" data-mode="online">
+  <div class="panel batch-card">
+    <div class="d-flex justify-content-between mb-2"><span class="su-badge b-teal">Online</span><span class="su-badge b-gray">RO-B</span></div>
+    <h2 class="h5 mb-1">Rising Orators <span class="text-muted-su fs-6">· 11–13 yrs</span></h2>
+    <ul class="pc-facts"><li><i class="bi bi-calendar3" aria-hidden="true"></i>Sunday, 9:00–10:15 AM</li><li><i class="bi bi-person-video3" aria-hidden="true"></i>Priya Nair</li></ul>
+    <div class="seats">6 of 10 seats left</div><div class="seat-bar" role="img" aria-label="4 of 10 seats taken"><span style="width:40%"></span></div>
+    <div class="d-flex gap-2"><button class="btn btn-su-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#enrolModal" data-batch="RO-B · Rising Orators · Sunday 9:00–10:15 AM">Enrol</button><button class="btn btn-su-ghost btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#switchModal" data-batch="RO-B · Rising Orators · Sunday 9:00–10:15 AM">Switch to this</button></div>
+  </div>
+</div><div class="col-md-6 col-xxl-4" data-item data-age="5-7" data-days="weekend" data-time="morning" data-mode="offline">
+  <div class="panel batch-card">
+    <div class="d-flex justify-content-between mb-2"><span class="su-badge b-orange">Studio</span><span class="su-badge b-gray">LT-B</span></div>
+    <h2 class="h5 mb-1">Little Talkers <span class="text-muted-su fs-6">· 5–7 yrs</span></h2>
+    <ul class="pc-facts"><li><i class="bi bi-calendar3" aria-hidden="true"></i>Saturday, 9:30–10:15 AM</li><li><i class="bi bi-person-video3" aria-hidden="true"></i>Meera Iyer</li></ul>
+    <div class="seats">1 of 6 seats left</div><div class="seat-bar low" role="img" aria-label="5 of 6 seats taken"><span style="width:83%"></span></div>
+    <div class="d-flex gap-2"><button class="btn btn-su-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#enrolModal" data-batch="LT-B · Little Talkers · Saturday 9:30–10:15 AM">Enrol</button><button class="btn btn-su-ghost btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#switchModal" data-batch="LT-B · Little Talkers · Saturday 9:30–10:15 AM">Switch to this</button></div>
+  </div>
+</div><div class="col-md-6 col-xxl-4" data-item data-age="14-16" data-days="weekday" data-time="evening" data-mode="online">
+  <div class="panel batch-card">
+    <div class="d-flex justify-content-between mb-2"><span class="su-badge b-teal">Online</span><span class="su-badge b-gray">TL-A</span></div>
+    <h2 class="h5 mb-1">Teen Leaders <span class="text-muted-su fs-6">· 14–16 yrs</span></h2>
+    <ul class="pc-facts"><li><i class="bi bi-calendar3" aria-hidden="true"></i>Friday, 6:30–8:00 PM</li><li><i class="bi bi-person-video3" aria-hidden="true"></i>Rahul Menon</li></ul>
+    <div class="seats">3 of 10 seats left</div><div class="seat-bar" role="img" aria-label="7 of 10 seats taken"><span style="width:70%"></span></div>
+    <div class="d-flex gap-2"><button class="btn btn-su-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#enrolModal" data-batch="TL-A · Teen Leaders · Friday 6:30–8:00 PM">Enrol</button><button class="btn btn-su-ghost btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#switchModal" data-batch="TL-A · Teen Leaders · Friday 6:30–8:00 PM">Switch to this</button></div>
+  </div>
+</div></div>
+    </div>
+    <div class="empty-state no-results is-hidden mt-3" data-no-results><div class="es-ico" aria-hidden="true"><i class="bi bi-calendar-x"></i></div><h2 class="h4">No batches match</h2><p>Try a different day or time. We open new batches every month.</p><button class="btn btn-su-navy" type="button" data-reset-filters>Reset filters</button></div>
+  </div>
+
+  <!-- Enrol wizard -->
+  <div class="modal fade" role="dialog" id="enrolModal" tabindex="-1" aria-labelledby="enrolModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content">
+      <div class="modal-header"><h2 class="modal-title h4" id="enrolModalLabel">Enrol in <span data-batch-label>batch</span></h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+      <div class="modal-body" data-wizard>
+        <ol class="steps-indicator"><li data-n="1" class="current">Child</li><li data-n="2">Plan</li><li data-n="3">Confirm</li></ol>
+        <div class="wizard-step active"><h3 class="h5">Who is joining?</h3><div class="row g-3" role="radiogroup" aria-label="Choose a child"><label class="plan-option col-sm-6"><input type="radio" name="child" value="diya" checked><span class="po d-flex gap-3 align-items-center"><img src="../assets/images/diya.jpg" alt="" width="240" height="240" loading="lazy" decoding="async" class="mini-avatar"><span><strong class="d-block text-navy">Diya</strong><span class="small text-muted-su">Age 9 · Young Speakers</span></span></span></label><label class="plan-option col-sm-6"><input type="radio" name="child" value="arjun" ><span class="po d-flex gap-3 align-items-center"><img src="../assets/images/aarav.jpg" alt="" width="240" height="240" loading="lazy" decoding="async" class="mini-avatar"><span><strong class="d-block text-navy">Arjun</strong><span class="small text-muted-su">Age 13 · Rising Orators</span></span></span></label></div></div>
+        <div class="wizard-step"><h3 class="h5">Choose a fee plan</h3><div class="row g-3" role="radiogroup" aria-label="Fee plan">
+          <label class="plan-option col-sm-6"><input type="radio" name="plan" value="monthly" checked><span class="po d-block"><strong class="d-block text-navy">Monthly · ₹2,499</strong><span class="small text-muted-su">Billed on the 15th, cancel anytime</span></span></label>
+          <label class="plan-option col-sm-6"><input type="radio" name="plan" value="term"><span class="po d-block"><strong class="d-block text-navy">Full term · ₹13,500</strong><span class="small text-muted-su">12 weeks, save 10%</span></span></label>
+        </div></div>
+        <div class="wizard-step"><h3 class="h5">All set?</h3><p>You're enrolling in <strong data-batch-label>batch</strong>. The first class appears in your schedule straight away and the invoice in Payments.</p><div class="form-check"><input class="form-check-input" type="checkbox" id="en-agree"><label class="form-check-label" for="en-agree">I agree to the class policies.</label></div><p class="form-error mt-2" id="en-agree-err"><i class="bi bi-exclamation-circle" aria-hidden="true"></i> Please tick the box to confirm.</p></div>
+      </div>
+      <div class="modal-footer"><button type="button" class="btn btn-su-ghost" data-wizard-prev disabled>Back</button><button type="button" class="btn btn-su-primary" data-wizard-next>Next</button></div>
+    </div></div>
+  </div>
+
+  <!-- Switch batch -->
+  <div class="modal fade" role="dialog" id="switchModal" tabindex="-1" aria-labelledby="switchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+      <div class="modal-header"><h2 class="modal-title h4" id="switchModalLabel">Switch batch</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+      <form class="su-form" data-toast="Switch requested. Your coach will confirm within 24 hours." data-close-modal aria-label="Switch batch">
+        <div class="modal-body">
+          <p>Move to <strong data-batch-label>batch</strong>. You can switch once per term at no cost.</p>
+          <div class="field mb-3"><label class="form-label" for="sw-child">Which child?</label><select class="form-select" id="sw-child" name="child" required data-label="a child"><option value="">Choose a child</option><option>Diya (YS-B2 · Sat 10:00 AM)</option><option>Arjun (RO-A · Sat 11:30 AM)</option></select></div>
+          <div class="field"><label class="form-label" for="sw-from">Start from</label><select class="form-select" id="sw-from" name="from" required data-label="a start week"><option value="">Choose a week</option><option>Next week (from 12 Oct)</option><option>After the showcase (from 2 Nov)</option></select></div>
+        </div>
+        <div class="modal-footer"><button type="button" class="btn btn-su-ghost" data-bs-dismiss="modal">Cancel</button><button type="submit" class="btn btn-su-primary">Request switch</button></div>
+      </form>
+    </div></div>
+  </div>
+</main>
+<footer class="dash-footer">&copy; <span data-year>2026</span> SpeakUp Stage · <a href="../pages/contact.html">Help &amp; support</a> · v1.1.0</footer>
+</div>
+<script src="../assets/js/plugins/bootstrap/bootstrap.bundle.min.js" defer></script>
+<script src="../assets/js/plugins/chartjs/chart.umd.min.js" defer></script>
+<script src="../assets/js/main.js" defer></script>
+<script src="../assets/js/dashboard.js" defer></script>
+</body>
+</html>

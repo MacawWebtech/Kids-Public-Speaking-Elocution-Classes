@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Documentation | SpeakUp Stage HTML Template</title>
+<meta name="description" content="Documentation for the SpeakUp Stage HTML template: setup, file structure, colors, fonts, components, forms, dark mode, RTL, accessibility, SEO and credits.">
+<link rel="canonical" href="https://www.speakupstage.example/documentation/index.html">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#1B2A4E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SpeakUp Stage">
+<meta property="og:title" content="Documentation | SpeakUp Stage HTML Template">
+<meta property="og:description" content="Documentation for the SpeakUp Stage HTML template: setup, file structure, colors, fonts, components, forms, dark mode, RTL, accessibility, SEO and credits.">
+<meta property="og:url" content="https://www.speakupstage.example/documentation/index.html">
+<meta property="og:image" content="../assets/images/banner.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+<!-- Prevent theme/direction flash: read saved preferences before CSS paints -->
+<script>(function(){var d=document.documentElement,t=null,r=null;try{t=localStorage.getItem('su-theme');r=localStorage.getItem('su-dir');}catch(e){}d.setAttribute('data-theme',t||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));if(r==='rtl'){d.setAttribute('dir','rtl');d.setAttribute('lang','ar');}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- TODO: fonts. Swap families here and in the su-font custom properties (style.css) -->
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&amp;family=Caveat:wght@600&amp;family=Nunito:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<link id="bs-css" rel="stylesheet" href="../assets/js/plugins/bootstrap/bootstrap.min.css" data-ltr="../assets/js/plugins/bootstrap/bootstrap.min.css" data-rtl="../assets/js/plugins/bootstrap/bootstrap.rtl.min.css">
+<script>if(document.documentElement.dir==='rtl'){var b=document.getElementById('bs-css');b.href=b.getAttribute('data-rtl');}</script>
+<link rel="stylesheet" href="../assets/js/plugins/bootstrap-icons/bootstrap-icons.min.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+<style>
+.doc-body section { padding-top: 24px; margin-bottom: 40px; }
+.doc-body h2 { font-size: 1.8rem; border-bottom: 2px dashed var(--su-border); padding-bottom: 8px; margin-bottom: 16px; }
+.doc-code { background: #0E1730; color: #E7ECF6; border-radius: 16px; padding: 16px 20px; font-size: .88rem; overflow-x: auto; }
+.doc-body code { color: var(--su-orange-600); }
+.doc-code code { color: inherit; }
+.side-link-doc { display: flex; gap: 10px; align-items: center; min-height: 40px; padding: 6px 10px; border-radius: 12px; font-weight: 700; color: var(--su-text); text-decoration: none; }
+.side-link-doc:hover { background: var(--su-orange-100); color: var(--su-heading); }
+</style>
+<link rel="stylesheet" href="../assets/css/dark-mode.css">
+<link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="su-header"><div class="container d-flex align-items-center justify-content-between" style="min-height:76px">
+  <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true"><i class="bi bi-mic-fill"></i></span><span>SpeakUp Stage<small>documentation · v1.1.0</small></span></a>
+  <div class="header-tools"><a class="btn btn-su-ghost btn-sm d-none d-sm-inline-flex" href="../index.html">View template</a><button class="tool-btn" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to dark mode"><i class="bi bi-moon-stars-fill" aria-hidden="true"></i></button><button class="tool-btn" type="button" data-rtl-toggle aria-pressed="false" aria-label="Switch to right-to-left layout"><span class="rtl-label">RTL</span></button></div>
+</div></header>
+<div class="container py-5">
+  <div class="row g-5">
+    <aside class="col-lg-3" aria-label="Documentation sections"><nav class="sticky-aside doc-nav su-card p-3"><ul class="list-unstyled m-0"><li><a class="side-link-doc" href="#start"><i class="bi bi-rocket-takeoff" aria-hidden="true"></i>Getting started</a></li><li><a class="side-link-doc" href="#structure"><i class="bi bi-folder2-open" aria-hidden="true"></i>File structure</a></li><li><a class="side-link-doc" href="#pages"><i class="bi bi-files" aria-hidden="true"></i>Page list</a></li><li><a class="side-link-doc" href="#colors"><i class="bi bi-palette" aria-hidden="true"></i>Colors & theme</a></li><li><a class="side-link-doc" href="#fonts"><i class="bi bi-fonts" aria-hidden="true"></i>Fonts</a></li><li><a class="side-link-doc" href="#content"><i class="bi bi-image" aria-hidden="true"></i>Content & images</a></li><li><a class="side-link-doc" href="#components"><i class="bi bi-grid-3x3-gap" aria-hidden="true"></i>Components</a></li><li><a class="side-link-doc" href="#meter"><i class="bi bi-soundwave" aria-hidden="true"></i>Confidence Meter</a></li><li><a class="side-link-doc" href="#forms"><i class="bi bi-ui-checks" aria-hidden="true"></i>Forms & integrations</a></li><li><a class="side-link-doc" href="#dark"><i class="bi bi-moon-stars" aria-hidden="true"></i>Dark mode & RTL</a></li><li><a class="side-link-doc" href="#a11y"><i class="bi bi-universal-access" aria-hidden="true"></i>Accessibility</a></li><li><a class="side-link-doc" href="#seo"><i class="bi bi-speedometer2" aria-hidden="true"></i>SEO & performance</a></li><li><a class="side-link-doc" href="#dashboard"><i class="bi bi-grid-1x2" aria-hidden="true"></i>Parent dashboard</a></li><li><a class="side-link-doc" href="#credits"><i class="bi bi-award" aria-hidden="true"></i>Credits</a></li><li><a class="side-link-doc" href="#changelog"><i class="bi bi-clock-history" aria-hidden="true"></i>Changelog</a></li><li><a class="side-link-doc" href="#support"><i class="bi bi-life-preserver" aria-hidden="true"></i>Support</a></li></ul></nav></aside>
+    <main class="col-lg-9 doc-body" id="main" tabindex="-1">
+      <p class="eyebrow"><i class="bi bi-book" aria-hidden="true"></i> Template documentation</p>
+      <h1>SpeakUp Stage HTML Template</h1>
+      <p class="lead">A multi-page Bootstrap 5 template for kids' public speaking and elocution academies, with a full parent dashboard. Built with semantic HTML, one custom stylesheet, and vanilla ES6+ JavaScript.</p>
+
+      <section id="start"><h2>Getting started</h2>
+        <ol><li>Unzip <code>speakup-stage.zip</code>.</li><li>Open <code>index.html</code> in a browser, or serve the folder locally for the best result (some browsers limit <code>file://</code> features):</li></ol>
+        <pre class="doc-code"><code>cd speakup-stage
+python3 -m http.server 8080   # or: npx serve .
+# open http://localhost:8080</code></pre>
+        <p>No build step is needed. Bootstrap 5.3.3, Bootstrap Icons 1.11.3 and Chart.js 4.4.4 are bundled locally in <code>assets/js/plugins/</code>, so the template works offline. Google Fonts and the photos load from CDNs.</p>
+        <p>Upload the whole folder to any static host (Netlify, Vercel, GitHub Pages, cPanel). Point your host's 404 page to <code>pages/404.html</code> (an <code>.htaccess</code> is included for Apache).</p>
+      </section>
+
+      <section id="structure"><h2>File structure</h2>
+        <pre class="doc-code"><code>speakup-stage/
+├── index.html                 Home 1
+├── index-2.html               Home 2 (online focus)
+├── pages/                     All inner pages, auth, 404, coming soon
+├── dashboard/                 Parent dashboard (9 pages, sidebar layout)
+├── assets/
+│   ├── css/
+│   │   ├── style.css          Design system + all public components
+│   │   ├── dashboard.css      Dashboard layout (loaded only in /dashboard)
+│   │   ├── dark-mode.css      [data-theme=&quot;dark&quot;] token overrides
+│   │   └── rtl.css            [dir=&quot;rtl&quot;] mirroring
+│   ├── js/
+│   │   ├── main.js            Theme, RTL, reveal, meters, forms, filters, calendar
+│   │   ├── dashboard.js       Sidebar, charts, wizard, chat, reminders
+│   │   └── plugins/           bootstrap/, bootstrap-icons/, chartjs/
+│   ├── images/                favicon.svg, photo-credits.txt (your own photos go here)
+│   └── fonts/                 Optional self-hosted fonts
+├── documentation/             This guide
+├── sitemap.xml, robots.txt, .htaccess
+└── README.md</code></pre>
+      </section>
+
+      <section id="pages"><h2>Page list</h2><div class="table-wrap"><div class="table-responsive"><table class="table table-su mb-0"><caption class="visually-hidden">Pages included</caption><thead><tr><th scope="col">File</th><th scope="col">What it is</th></tr></thead><tbody><tr><td><code>index.html</code></td><td>Home 1: the 5-second parent pitch with all 10 sections</td></tr><tr><td><code>index-2.html</code></td><td>Home 2: online-class focus with inline demo booking</td></tr><tr><td><code>pages/programs.html</code></td><td>Programs by age, batch finder filters, comparison table, schedule tabs</td></tr><tr><td><code>pages/program-details.html</code></td><td>Young Speakers syllabus, class flow, timings, pricing, FAQ (3 more program pages share this layout)</td></tr><tr><td><code>pages/instructors.html</code></td><td>Coach grid with specialty filter and search</td></tr><tr><td><code>pages/instructor-details.html</code></td><td>Coach profile (one page per coach is generated)</td></tr><tr><td><code>pages/competitions.html</code></td><td>Upcoming / calendar / past tabs, registration, winners gallery</td></tr><tr><td><code>pages/competition-details.html</code></td><td>Rules, categories, judging criteria, venue map, registration</td></tr><tr><td><code>pages/about.html</code></td><td>Mission, timeline, values, team, gallery</td></tr><tr><td><code>pages/blog.html</code></td><td>Searchable, filterable blog with skeleton loader</td></tr><tr><td><code>pages/blog-details.html</code></td><td>Article with sidebar and comment form</td></tr><tr><td><code>pages/contact.html</code></td><td>Contact form, map, details and demo booking form</td></tr><tr><td><code>pages/pricing.html</code></td><td>Plans with monthly/term toggle, add-ons, FAQ</td></tr><tr><td><code>pages/login.html, register.html, forgot-password.html</code></td><td>Parent portal auth screens</td></tr><tr><td><code>pages/404.html, coming-soon.html</code></td><td>Mic-drop 404 and countdown page</td></tr><tr><td><code>dashboard/*.html</code></td><td>Overview, My Children, Enrol, Progress, Schedule, Competitions, Payments, Messages, Settings</td></tr></tbody></table></div></div></section>
+
+      <section id="colors"><h2>Colors &amp; theme</h2>
+        <p>All colors are CSS custom properties at the top of <code>assets/css/style.css</code>. Change them once and the whole site follows. Search for <code>TODO</code> to find every customization point.</p>
+        <div class="d-flex flex-wrap gap-2 mb-3"><span class="stat-pill"><span style="width:18px;height:18px;border-radius:6px;background:#1B2A4E;display:inline-block;border:1px solid rgba(0,0,0,.1)"></span>Navy <code>#1B2A4E</code></span><span class="stat-pill"><span style="width:18px;height:18px;border-radius:6px;background:#FF7A1A;display:inline-block;border:1px solid rgba(0,0,0,.1)"></span>Orange <code>#FF7A1A</code></span><span class="stat-pill"><span style="width:18px;height:18px;border-radius:6px;background:#FF7A1A;display:inline-block;border:1px solid rgba(0,0,0,.1)"></span>Orange <code>#FF7A1A</code></span><span class="stat-pill"><span style="width:18px;height:18px;border-radius:6px;background:#2EC4B6;display:inline-block;border:1px solid rgba(0,0,0,.1)"></span>Teal <code>#2EC4B6</code></span><span class="stat-pill"><span style="width:18px;height:18px;border-radius:6px;background:#FFF9EE;display:inline-block;border:1px solid rgba(0,0,0,.1)"></span>Cream <code>#FFF9EE</code></span></div>
+        <pre class="doc-code"><code>:root {
+  --su-navy:   #1B2A4E;  /* trust: headings, nav, footer   */
+  --su-orange: #FF7A1A;  /* energy: highlights, spotlight  */
+  --su-orange:  #FF7A1A;  /* CTA buttons                     */
+  --su-teal:   #2EC4B6;  /* success, progress, meters       */
+  --su-cream:  #FFF9EE;  /* page background                 */
+  /* AA-safe text shades used for small text */
+  --su-orange-600: #C2410C;
+  --su-teal-700:  #0F766B;
+}</code></pre>
+        <p>Semantic roles (<code>--su-bg</code>, <code>--su-surface</code>, <code>--su-text</code>, <code>--su-heading</code>, <code>--su-border</code>) are what components use, so dark mode only needs to re-map those (see <code>dark-mode.css</code>). Primary buttons use navy text on orange (5.05:1) to keep the exact brand orange while passing WCAG AA.</p>
+      </section>
+
+      <section id="fonts"><h2>Fonts</h2>
+        <p>Headings use <strong>Baloo 2</strong>, body text <strong>Nunito</strong>, and small handwritten accents <strong>Caveat</strong>. To change them, edit the Google Fonts <code>&lt;link&gt;</code> in each page's <code>&lt;head&gt;</code> and the three variables:</p>
+        <pre class="doc-code"><code>--su-font-head: &quot;Baloo 2&quot;, &quot;Fredoka&quot;, system-ui, sans-serif;
+--su-font-body: &quot;Nunito&quot;, system-ui, sans-serif;
+--su-font-hand: &quot;Caveat&quot;, cursive;</code></pre>
+        <p>To self-host (best for performance and privacy), download the WOFF2 files into <code>assets/fonts/</code>, add <code>@font-face</code> rules at the top of <code>style.css</code>, and remove the Google Fonts link.</p>
+      </section>
+
+      <section id="content"><h2>Content &amp; images</h2>
+        <ul>
+          <li>All photos are your own images, stored locally in <code>assets/images/</code> (no external image hosts). Each has explicit <code>width</code>/<code>height</code> (no layout shift) and <code>loading="lazy"</code> below the fold.</li>
+          <li>A person keeps the same photo everywhere they appear (a coach on the home page, team grid and profile; a child in the dashboard). Every other photo is used once.</li>
+          <li><code>assets/images/photo-credits.txt</code> lists every image slot and its photo URL.</li>
+          <li><strong>Use your own photos (recommended before launch):</strong> save WebP files in <code>assets/images/</code>, then replace the <code>src</code>/<code>srcset</code> of each <code>&lt;img&gt;</code> and update its <code>alt</code>. Keep the same aspect ratio as the <code>width</code>/<code>height</code> attributes. If you use the generator workflow, edit <code>SLOTS</code>, <code>COACH</code> and <code>PARENT</code> in one place instead.</li>
+          <li>Sample people, prices (₹), dates and achievements are realistic placeholders. Search for <code>TODO</code> and for the sample domain <code>speakupstage.example</code> before launch.</li>
+          <li>Only the decorative stage shapes (curtain edges, spotlight beam, waves) are inline SVG, so they recolor in dark mode.</li>
+        </ul>
+      </section>
+
+      <section id="components"><h2>Components</h2>
+        <p>One consistent button set with the speech-bubble corner:</p>
+        <div class="d-flex flex-wrap gap-2 mb-3"><a class="btn btn-su-primary" href="#components">Primary</a><a class="btn btn-su-navy" href="#components">Navy</a><a class="btn btn-su-orange" href="#components">Orange</a><a class="btn btn-su-outline" href="#components">Outline</a><a class="btn btn-su-ghost" href="#components">Ghost</a></div>
+        <pre class="doc-code"><code>&lt;a class=&quot;btn btn-su-primary&quot; href=&quot;pages/contact.html#demo&quot;&gt;Book a Free Demo Class&lt;/a&gt;
+&lt;div class=&quot;su-card bubble-card tail&quot;&gt;Speech-bubble card with a tail&lt;/div&gt;
+&lt;span class=&quot;su-badge b-teal&quot;&gt;Ages 8–10&lt;/span&gt;
+&lt;span class=&quot;icon-tile t-orange&quot;&gt;&lt;i class=&quot;bi bi-mic&quot;&gt;&lt;/i&gt;&lt;/span&gt;</code></pre>
+        <p>Also included: accordion (<code>.su-accordion</code>), tabs (<code>.su-tabs</code>), filter chips, modal, timeline (<code>.timeline</code>), pricing cards, comparison tables, calendar, skeleton loaders and empty states.</p>
+      </section>
+
+      <section id="meter"><h2>Confidence Meter</h2>
+        <p>The signature motif: a sound-wave bar that fills as it scrolls into view. Add <code>data-animate</code> for a gentle live wave (disabled for reduced motion).</p>
+        <div class="su-card mb-3"><div class="cmeter"><div class="cmeter-head"><span>Storytelling</span><span class="val">78%</span></div><div class="cwave" role="img" data-level="78" data-bars="20" aria-label="Storytelling: 78 out of 100" data-animate></div></div></div>
+        <pre class="doc-code"><code>&lt;div class=&quot;cmeter&quot;&gt;
+  &lt;div class=&quot;cmeter-head&quot;&gt;&lt;span&gt;Storytelling&lt;/span&gt;&lt;span class=&quot;val&quot;&gt;78%&lt;/span&gt;&lt;/div&gt;
+  &lt;div class=&quot;cwave&quot; role=&quot;img&quot; data-level=&quot;78&quot; data-bars=&quot;20&quot; aria-label=&quot;Storytelling: 78 out of 100&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- color variants: .cwave.orange, .cwave.orange · size: .cwave.sm --&gt;
+&lt;!-- gauge: &lt;div class=&quot;gauge&quot; data-value=&quot;82&quot;&gt;…&lt;/div&gt; (see dashboard/progress.html) --&gt;</code></pre>
+        <p>After loading content dynamically, call <code>window.SUBuildWaves(container)</code> to render new meters.</p>
+      </section>
+
+      <section id="forms"><h2>Forms &amp; integrations</h2>
+        <p>Any <code>&lt;form class="su-form"&gt;</code> gets friendly client-side validation. Set a custom message per field with <code>data-msg</code>; errors are announced with <code>aria-describedby</code> and focus moves to the first problem.</p>
+        <pre class="doc-code"><code>&lt;form class=&quot;su-form&quot; data-endpoint=&quot;https://formspree.io/f/YOUR_FORM_ID&quot; data-success=&quot;ok-id&quot;&gt;
+  &lt;div class=&quot;field&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;age&quot;&gt;Child&#x27;s age&lt;/label&gt;
+    &lt;input class=&quot;form-control&quot; id=&quot;age&quot; type=&quot;number&quot; min=&quot;5&quot; max=&quot;16&quot; required
+           data-msg=&quot;Please tell us your child&#x27;s age (5 to 16).&quot;&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+&lt;div class=&quot;form-success&quot; id=&quot;ok-id&quot;&gt;Thanks!&lt;/div&gt;</code></pre>
+        <ul>
+          <li><strong>Formspree:</strong> replace <code>YOUR_FORM_ID</code> in <code>data-endpoint</code>. Placeholder endpoints containing <code>YOUR_</code> are simulated so the demo works offline.</li>
+          <li><strong>Netlify Forms:</strong> add <code>name="contact" data-netlify="true"</code> to the form and set <code>data-endpoint="/"</code>.</li>
+          <li><strong>Mailchimp / ConvertKit:</strong> newsletter forms use the field name <code>EMAIL</code>; paste your list's form action URL into <code>data-endpoint</code>.</li>
+          <li><strong>Google Maps:</strong> on <code>contact.html</code> and <code>competition-details.html</code>, replace the <code>.map-ph</code> block with your embed <code>&lt;iframe&gt;</code> (snippet in the TODO comment).</li>
+          <li><strong>Booking calendar:</strong> the demo form can be swapped for a Calendly or Cal.com embed (TODO in <code>contact.html</code>).</li>
+          <li><strong>Stripe / PayPal:</strong> the buttons in <code>dashboard/payments.html</code> are placeholders; wire them to Stripe Checkout and PayPal Smart Buttons from your backend.</li>
+          <li><strong>Login:</strong> the auth forms validate and then redirect to the demo dashboard (<code>data-redirect</code>). Connect your own auth provider.</li>
+        </ul>
+      </section>
+
+      <section id="dark"><h2>Dark mode &amp; RTL</h2>
+        <p><strong>Dark mode</strong> follows the visitor's system setting on first visit (<code>prefers-color-scheme</code>), then remembers their choice. An inline script in <code>&lt;head&gt;</code> applies it before paint, so there is no flash. All overrides live in <code>dark-mode.css</code> under <code>[data-theme="dark"]</code>; charts re-theme automatically.</p>
+        <p><strong>RTL</strong>: the RTL button switches <code>&lt;html dir="rtl"&gt;</code>, swaps Bootstrap to <code>bootstrap.rtl.min.css</code> and applies <code>rtl.css</code>. For an Arabic or Hebrew site, set <code>dir="rtl" lang="ar"</code> on <code>&lt;html&gt;</code>, point <code>#bs-css</code> to the RTL file and remove the toggle buttons.</p>
+      </section>
+
+      <section id="a11y"><h2>Accessibility</h2>
+        <ul><li>Skip link, visible focus rings, landmarks and one <code>&lt;h1&gt;</code> per page with a logical heading order.</li><li>Color pairs checked for WCAG 2.1 AA contrast; touch targets are at least 44×44px.</li><li>Icons are decorative (<code>aria-hidden</code>); icon-only buttons have <code>aria-label</code>s. Meters, gauges and charts have text alternatives.</li><li>Keyboard support for menus, tabs, accordions, modals, filters, child tabs (arrow keys) and the dashboard drawer (Esc closes).</li><li>Animations respect <code>prefers-reduced-motion</code> and are lighter on small screens.</li></ul>
+      </section>
+
+      <section id="seo"><h2>SEO &amp; performance</h2>
+        <ul><li>Unique titles (≤60 characters) and meta descriptions (150–160 characters) on every page, plus canonical, Open Graph and Twitter tags.</li><li>JSON-LD: <code>EducationalOrganization</code> + <code>LocalBusiness</code>, <code>Event</code> (competitions), <code>Course</code> (programs), <code>FAQPage</code>, <code>BlogPosting</code>, <code>Person</code> (coaches).</li><li><code>sitemap.xml</code> and <code>robots.txt</code> included (dashboard is <code>noindex</code>). Replace <code>https://www.speakupstage.example</code> with your domain.</li><li>Locally hosted photos with explicit sizes, lazy loading, deferred scripts, no render-blocking JS, local libraries. For best scores, self-host fonts and enable gzip/brotli (see <code>.htaccess</code>).</li></ul>
+      </section>
+
+      <section id="dashboard"><h2>Parent dashboard</h2>
+        <p>Nine pages share one sidebar layout (<code>dashboard.css</code>). Each data area has a skeleton state (<code>data-skeleton</code>), and empty states are shown for no batches, no results and no notes. Charts use Chart.js and show a placeholder box if the library fails to load.</p>
+        <pre class="doc-code"><code>&lt;!-- Skeleton pattern: placeholder shows until .loaded is added --&gt;
+&lt;div data-skeleton=&quot;900&quot;&gt;
+  &lt;div class=&quot;sk-ph&quot;&gt;…skeleton blocks…&lt;/div&gt;
+  &lt;div class=&quot;sk-real&quot;&gt;…real content…&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- TODO: in main.js, replace the timeout with your fetch() completion --&gt;</code></pre>
+      </section>
+
+      <section id="credits"><h2>Credits</h2>
+        <ul><li><a href="https://getbootstrap.com/">Bootstrap 5.3.3</a> (MIT)</li><li><a href="https://icons.getbootstrap.com/">Bootstrap Icons 1.11.3</a> (MIT)</li><li><a href="https://www.chartjs.org/">Chart.js 4.4.4</a> (MIT)</li><li><a href="https://fonts.google.com/">Google Fonts</a>: Baloo 2, Nunito, Caveat (SIL Open Font License)</li><li>Photography: supplied by the site owner, in <code>assets/images/</code>.</li></ul>
+      </section>
+
+      <section id="changelog"><h2>Changelog</h2><ul class="timeline"><li><span class="tl-dot t-teal" aria-hidden="true"><i class="bi bi-camera"></i></span><span class="tl-date">v1.1.0 · 8 Oct 2026</span><h3>Real photography</h3><p>Every illustration replaced with the site owner's own photos, served locally.</p></li><li><span class="tl-dot t-orange" aria-hidden="true"><i class="bi bi-rocket"></i></span><span class="tl-date">v1.0.0 · 8 Oct 2026</span><h3>Initial release</h3><p>2 home layouts, 31 inner and auth pages, 9 dashboard pages, dark mode, RTL, documentation.</p></li></ul></section>
+
+      <section id="support"><h2>Support</h2><p>Questions or found a bug? Email <a href="mailto:support@speakupstage.example">support@speakupstage.example</a> with your page, browser and a screenshot. We reply within two working days. Customization services are available on request.</p></section>
+    </main>
+  </div>
+</div>
+<script src="../assets/js/plugins/bootstrap/bootstrap.bundle.min.js" defer></script>
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>

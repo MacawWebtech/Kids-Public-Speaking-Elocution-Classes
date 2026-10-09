@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parent Login | SpeakUp Stage</title>
+<meta name="description" content="Log in to the SpeakUp Stage parent portal to view class schedules, coach progress notes, Confidence Meter reports, competition entries and pay fees online.">
+<link rel="canonical" href="https://www.speakupstage.example/pages/login.html">
+<meta name="theme-color" content="#1B2A4E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SpeakUp Stage">
+<meta property="og:title" content="Parent Login | SpeakUp Stage">
+<meta property="og:description" content="Log in to the SpeakUp Stage parent portal to view class schedules, coach progress notes, Confidence Meter reports, competition entries and pay fees online.">
+<meta property="og:url" content="https://www.speakupstage.example/pages/login.html">
+<meta property="og:image" content="../assets/images/banner.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+<!-- Prevent theme/direction flash: read saved preferences before CSS paints -->
+<script>(function(){var d=document.documentElement,t=null,r=null;try{t=localStorage.getItem('su-theme');r=localStorage.getItem('su-dir');}catch(e){}d.setAttribute('data-theme',t||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));if(r==='rtl'){d.setAttribute('dir','rtl');d.setAttribute('lang','ar');}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- TODO: fonts. Swap families here and in the su-font custom properties (style.css) -->
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&amp;family=Caveat:wght@600&amp;family=Nunito:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<link id="bs-css" rel="stylesheet" href="../assets/js/plugins/bootstrap/bootstrap.min.css" data-ltr="../assets/js/plugins/bootstrap/bootstrap.min.css" data-rtl="../assets/js/plugins/bootstrap/bootstrap.rtl.min.css">
+<script>if(document.documentElement.dir==='rtl'){var b=document.getElementById('bs-css');b.href=b.getAttribute('data-rtl');}</script>
+<link rel="stylesheet" href="../assets/js/plugins/bootstrap-icons/bootstrap-icons.min.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/dark-mode.css">
+<link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="auth-wrap">
+  <div class="auth-art">
+    <svg class="spot-beam" viewBox="0 0 400 520" aria-hidden="true" focusable="false"><defs><linearGradient id="pb24" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF7A1A" stop-opacity=".45"/><stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/></linearGradient></defs><path d="M180 0h40l170 520H10z" fill="url(#pb24)"/></svg>
+    <a class="brand" href="../index.html" style="color:#fff"><span class="brand-mark" aria-hidden="true" style="background:var(--su-orange);color:var(--su-navy)"><i class="bi bi-mic-fill"></i></span><span>SpeakUp Stage<small style="color:var(--su-orange)">every child gets a stage</small></span></a>
+    <div class="art-img"><img src="../assets/images/zara.jpg" alt="A young girl sitting in front of a stage curtain" width="840" height="640" fetchpriority="high" loading="eager" decoding="async"></div>
+    <div><h2>Your child's progress, in one place</h2><p style="color:#C9D2E6;max-width:420px">Coach notes, schedules, competitions and payments, all from the parent portal.</p></div>
+  </div>
+  <main class="auth-main" id="main" tabindex="-1">
+    <div class="auth-card">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <a class="brand d-lg-none" href="../index.html"><span class="brand-mark" aria-hidden="true"><i class="bi bi-mic-fill"></i></span><span>SpeakUp Stage</span></a>
+        <a class="link-arrow d-none d-lg-inline-flex" href="../index.html"><i class="bi bi-arrow-left" aria-hidden="true"></i> Back to website</a>
+        <div class="header-tools"><button class="tool-btn" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to dark mode"><i class="bi bi-moon-stars-fill" aria-hidden="true"></i></button><button class="tool-btn" type="button" data-rtl-toggle aria-pressed="false" aria-label="Switch to right-to-left layout"><span class="rtl-label">RTL</span></button></div>
+      </div>
+      <h1>Welcome back!</h1>
+      <p class="text-muted-su mb-4">Log in to see your child's classes, progress notes and fees.</p>
+      <form class="su-form" data-redirect="../dashboard/index.html" aria-label="Parent login">
+  <div class="d-grid gap-3">
+    <div class="field"><label class="form-label" for="lg-email">Email</label><input class="form-control" id="lg-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com" value="" data-msg="Please enter the email you registered with."></div>
+    <div class="field"><div class="d-flex justify-content-between"><label class="form-label" for="lg-pw">Password</label><a class="small fw-800" href="forgot-password.html">Forgot password?</a></div>
+      <div class="position-relative"><input class="form-control pe-5" id="lg-pw" type="password" name="password" required minlength="6" autocomplete="current-password" data-msg="Please enter your password (at least 6 characters)."><button class="pw-toggle" type="button" data-pw-toggle="lg-pw" aria-label="Show password" aria-pressed="false"><i class="bi bi-eye" aria-hidden="true"></i></button></div></div>
+    <div class="form-check"><input class="form-check-input" type="checkbox" id="lg-remember" name="remember"><label class="form-check-label" for="lg-remember">Keep me signed in</label></div>
+    <button class="btn btn-su-primary btn-lg w-100" type="submit"><i class="bi bi-box-arrow-in-right" aria-hidden="true"></i> Log in</button>
+  </div>
+</form>
+<div class="divider-text">or</div>
+<div class="d-grid gap-2"><button class="btn btn-su-ghost w-100" type="button" data-demo-toast="Google sign-in placeholder: connect your auth provider." data-icon="bi-google"><i class="bi bi-google" aria-hidden="true"></i> Continue with Google</button><button class="btn btn-su-ghost w-100" type="button" data-demo-toast="Apple sign-in placeholder: connect your auth provider." data-icon="bi-apple"><i class="bi bi-apple" aria-hidden="true"></i> Continue with Apple</button><a class="btn btn-su-ghost w-100" href="../dashboard/index.html"><i class="bi bi-eye" aria-hidden="true"></i> View demo dashboard</a></div>
+<p class="text-center mt-4 mb-0">New to SpeakUp Stage? <a class="fw-800" href="register.html">Create a parent account</a></p>
+    </div>
+  </main>
+</div>
+<script src="../assets/js/plugins/bootstrap/bootstrap.bundle.min.js" defer></script>
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>

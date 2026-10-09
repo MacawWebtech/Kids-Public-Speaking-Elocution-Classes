@@ -1,0 +1,7 @@
+# TODO: replace the domain before launch
+User-agent: *
+Allow: /
+Disallow: /dashboard/
+Disallow: /documentation/
+
+Sitemap: https://www.speakupstage.example/sitemap.xml

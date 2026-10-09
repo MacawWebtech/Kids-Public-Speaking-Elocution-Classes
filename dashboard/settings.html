@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Account Settings | SpeakUp Stage Parent Dashboard</title>
+<meta name="description" content="Update your SpeakUp Stage parent profile, choose WhatsApp and email notifications, change your password and pick your dashboard language, time zone and layout.">
+<link rel="canonical" href="https://www.speakupstage.example/dashboard/settings.html">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1B2A4E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SpeakUp Stage">
+<meta property="og:title" content="Account Settings | SpeakUp Stage Parent Dashboard">
+<meta property="og:description" content="Update your SpeakUp Stage parent profile, choose WhatsApp and email notifications, change your password and pick your dashboard language, time zone and layout.">
+<meta property="og:url" content="https://www.speakupstage.example/dashboard/settings.html">
+<meta property="og:image" content="../assets/images/banner.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+<!-- Prevent theme/direction flash: read saved preferences before CSS paints -->
+<script>(function(){var d=document.documentElement,t=null,r=null;try{t=localStorage.getItem('su-theme');r=localStorage.getItem('su-dir');}catch(e){}d.setAttribute('data-theme',t||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));if(r==='rtl'){d.setAttribute('dir','rtl');d.setAttribute('lang','ar');}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- TODO: fonts. Swap families here and in the su-font custom properties (style.css) -->
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&amp;family=Caveat:wght@600&amp;family=Nunito:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<link id="bs-css" rel="stylesheet" href="../assets/js/plugins/bootstrap/bootstrap.min.css" data-ltr="../assets/js/plugins/bootstrap/bootstrap.min.css" data-rtl="../assets/js/plugins/bootstrap/bootstrap.rtl.min.css">
+<script>if(document.documentElement.dir==='rtl'){var b=document.getElementById('bs-css');b.href=b.getAttribute('data-rtl');}</script>
+<link rel="stylesheet" href="../assets/js/plugins/bootstrap-icons/bootstrap-icons.min.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/dashboard.css">
+<link rel="stylesheet" href="../assets/css/dark-mode.css">
+<link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body class="dash-body">
+<a class="skip-link" href="#main">Skip to main content</a>
+<aside class="dash-sidebar" id="dashSidebar" aria-label="Dashboard navigation">
+  <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><i class="bi bi-mic-fill"></i></span><span>SpeakUp Stage<small>parent portal</small></span></a>
+  <nav aria-label="Dashboard sections"><p class="side-label">Main</p><ul class="side-nav"><li><a class="side-link" href="index.html"><i class="bi bi-house-door" aria-hidden="true"></i><span>Overview</span></a></li><li><a class="side-link" href="children.html"><i class="bi bi-people" aria-hidden="true"></i><span>My Children</span></a></li><li><a class="side-link" href="enrol.html"><i class="bi bi-pencil-square" aria-hidden="true"></i><span>Enrol in Batches</span></a></li><li><a class="side-link" href="progress.html"><i class="bi bi-graph-up-arrow" aria-hidden="true"></i><span>Progress Tracker</span></a></li></ul><p class="side-label">Plan</p><ul class="side-nav"><li><a class="side-link" href="schedule.html"><i class="bi bi-calendar3" aria-hidden="true"></i><span>Schedule</span></a></li><li><a class="side-link" href="competitions.html"><i class="bi bi-trophy" aria-hidden="true"></i><span>Competitions</span></a></li><li><a class="side-link" href="payments.html"><i class="bi bi-wallet2" aria-hidden="true"></i><span>Payments</span><span class="count">1<span class="visually-hidden"> new</span></span></a></li><li><a class="side-link" href="messages.html"><i class="bi bi-chat-dots" aria-hidden="true"></i><span>Messages</span><span class="count">3<span class="visually-hidden"> new</span></span></a></li></ul><p class="side-label">Account</p><ul class="side-nav"><li><a class="side-link active" aria-current="page" href="settings.html"><i class="bi bi-gear" aria-hidden="true"></i><span>Settings</span></a></li></ul></nav>
+  <div class="side-help mt-4"><strong>Need help?</strong>Our parent desk replies within 2 hours on WhatsApp.<a class="d-flex align-items-center gap-2 mt-2 fw-800 text-decoration-none" style="color:var(--su-orange);min-height:44px" href="https://wa.me/919840012345"><i class="bi bi-whatsapp" aria-hidden="true"></i> Chat with us</a></div>
+  <ul class="side-nav mt-3"><li><a class="side-link" href="../index.html"><i class="bi bi-globe2" aria-hidden="true"></i><span>Back to website</span></a></li><li><a class="side-link" href="../pages/login.html"><i class="bi bi-box-arrow-left" aria-hidden="true"></i><span>Log out</span></a></li></ul>
+</aside>
+<div class="dash-backdrop" data-dash-close></div>
+<div class="dash-main">
+<header class="dash-topbar">
+  <button class="tool-btn dash-menu-btn" type="button" data-dash-toggle aria-controls="dashSidebar" aria-expanded="false" aria-label="Open dashboard menu"><i class="bi bi-list" aria-hidden="true"></i></button>
+  <form class="search" role="search" action="enrol.html"><label class="visually-hidden" for="dash-q">Search batches, coaches, invoices</label><i class="bi bi-search" aria-hidden="true"></i><input class="form-control" id="dash-q" type="search" name="q" placeholder="Search batches, coaches, invoices"></form>
+  <div class="dash-user">
+    <button class="tool-btn" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to dark mode"><i class="bi bi-moon-stars-fill" aria-hidden="true"></i></button>
+    <button class="tool-btn" type="button" data-rtl-toggle aria-pressed="false" aria-label="Switch to right-to-left layout"><span class="rtl-label">RTL</span></button>
+    <a class="tool-btn notif-dot" href="messages.html" aria-label="Messages, 3 unread"><i class="bi bi-bell" aria-hidden="true"></i></a>
+    <a class="d-flex align-items-center gap-2 text-decoration-none" href="settings.html"><img src="../assets/images/review1.jpg" alt="" width="160" height="160" loading="lazy" decoding="async"><span class="who"><strong>Lakshmi Venkatesh</strong><span>Parent · 2 children</span></span><span class="visually-hidden">Account settings</span></a>
+  </div>
+</header>
+<main class="dash-content" id="main" tabindex="-1">
+  <div class="dash-title"><div><h1>Settings</h1><p>Profile, notifications, password and language.</p></div><div class="d-flex gap-2 flex-wrap"></div></div>
+
+  <div class="row g-4">
+    <div class="col-lg-3"><div class="panel p-2"><div class="nav flex-column settings-nav" role="tablist" aria-orientation="vertical">
+      <button class="nav-link active" id="st-profile" data-bs-toggle="pill" data-bs-target="#sp-profile" type="button" role="tab" aria-controls="sp-profile" aria-selected="true"><i class="bi bi-person" aria-hidden="true"></i> Profile</button>
+      <button class="nav-link" id="st-notif" data-bs-toggle="pill" data-bs-target="#sp-notif" type="button" role="tab" aria-controls="sp-notif" aria-selected="false"><i class="bi bi-bell" aria-hidden="true"></i> Notifications</button>
+      <button class="nav-link" id="st-pw" data-bs-toggle="pill" data-bs-target="#sp-pw" type="button" role="tab" aria-controls="sp-pw" aria-selected="false"><i class="bi bi-shield-lock" aria-hidden="true"></i> Password</button>
+      <button class="nav-link" id="st-lang" data-bs-toggle="pill" data-bs-target="#sp-lang" type="button" role="tab" aria-controls="sp-lang" aria-selected="false"><i class="bi bi-translate" aria-hidden="true"></i> Language</button>
+    </div></div></div>
+    <div class="col-lg-9"><div class="tab-content">
+      <div class="tab-pane fade show active" id="sp-profile" role="tabpanel" aria-labelledby="st-profile" tabindex="0"><div class="panel">
+        <h2 class="h4 mb-4">Profile</h2>
+        <div class="d-flex gap-4 align-items-center mb-4 flex-wrap"><div class="avatar-edit"><img src="../assets/images/review1.jpg" alt="Your profile photo" width="224" height="224" loading="lazy" decoding="async"><button class="btn btn-su-orange btn-icon" type="button" data-demo-toast="Photo upload placeholder." data-icon="bi-camera" aria-label="Change photo"><i class="bi bi-camera" aria-hidden="true"></i></button></div><div><strong class="d-block text-navy fs-5">Lakshmi Venkatesh</strong><span class="text-muted-su small">Parent since June 2025</span></div></div>
+        <form class="su-form" data-toast="Profile saved." aria-label="Profile">
+          <div class="row g-3">
+            <div class="col-sm-6 field"><label class="form-label" for="pf-first">First name</label><input class="form-control" id="pf-first" name="first" value="Lakshmi" required autocomplete="given-name"></div>
+            <div class="col-sm-6 field"><label class="form-label" for="pf-last">Last name</label><input class="form-control" id="pf-last" name="last" value="Venkatesh" required autocomplete="family-name"></div>
+            <div class="col-sm-6 field"><label class="form-label" for="pf-email">Email</label><input class="form-control" id="pf-email" type="email" name="email" value="lakshmi.v@example.com" required autocomplete="email"></div>
+            <div class="col-sm-6 field"><label class="form-label" for="pf-phone">WhatsApp</label><input class="form-control" id="pf-phone" type="tel" name="phone" value="9840098400" pattern="[0-9]{10}" required autocomplete="tel"></div>
+            <div class="col-12 field"><label class="form-label" for="pf-addr">Address</label><input class="form-control" id="pf-addr" name="address" value="22, 5th Main Road, Anna Nagar West, Chennai 600040" autocomplete="address-line1"></div>
+            <div class="col-12"><button class="btn btn-su-primary" type="submit">Save changes</button></div>
+          </div>
+        </form>
+      </div></div>
+      <div class="tab-pane fade" id="sp-notif" role="tabpanel" aria-labelledby="st-notif" tabindex="0"><div class="panel">
+        <h2 class="h4 mb-3">Notifications</h2>
+        <div class="toggle-row"><div><strong id="n1">Class reminders</strong><span>WhatsApp, 2 hours before each class</span></div><div class="form-check form-switch m-0"><input class="form-check-input" type="checkbox" role="switch" checked aria-labelledby="n1" data-reminder="Class reminders"></div></div>
+        <div class="toggle-row"><div><strong id="n2">New progress notes</strong><span>Email when a coach adds a note</span></div><div class="form-check form-switch m-0"><input class="form-check-input" type="checkbox" role="switch" checked aria-labelledby="n2" data-reminder="Progress note alerts"></div></div>
+        <div class="toggle-row"><div><strong id="n3">Payment due</strong><span>3 days before the due date</span></div><div class="form-check form-switch m-0"><input class="form-check-input" type="checkbox" role="switch" checked aria-labelledby="n3" data-reminder="Payment reminders"></div></div>
+        <div class="toggle-row"><div><strong id="n4">Competitions &amp; events</strong><span>When new events open for your children's ages</span></div><div class="form-check form-switch m-0"><input class="form-check-input" type="checkbox" role="switch" aria-labelledby="n4" data-reminder="Competition alerts"></div></div>
+        <div class="toggle-row"><div><strong id="n5">Monthly newsletter</strong><span>One speaking tip a month</span></div><div class="form-check form-switch m-0"><input class="form-check-input" type="checkbox" role="switch" aria-labelledby="n5" data-reminder="Newsletter"></div></div>
+      </div></div>
+      <div class="tab-pane fade" id="sp-pw" role="tabpanel" aria-labelledby="st-pw" tabindex="0"><div class="panel">
+        <h2 class="h4 mb-3">Change password</h2>
+        <form class="su-form" data-toast="Password updated." aria-label="Change password" style="max-width:480px">
+          <div class="d-grid gap-3">
+            <div class="field"><label class="form-label" for="pw-cur">Current password</label><input class="form-control" id="pw-cur" type="password" name="current" required autocomplete="current-password" data-msg="Please enter your current password."></div>
+            <div class="field"><label class="form-label" for="pw-new">New password</label><input class="form-control" id="pw-new" type="password" name="new" required minlength="8" autocomplete="new-password" data-pw-strength="pw-strength" data-msg="Please use at least 8 characters."><div class="pw-strength" id="pw-strength" aria-hidden="true"><span></span></div><div class="small text-muted-su mt-1" id="pw-strength-text" aria-live="polite"></div></div>
+            <div class="field"><label class="form-label" for="pw-new2">Confirm new password</label><input class="form-control" id="pw-new2" type="password" name="new2" required data-match="pw-new" autocomplete="new-password"></div>
+            <div><button class="btn btn-su-primary" type="submit">Update password</button></div>
+          </div>
+        </form>
+      </div></div>
+      <div class="tab-pane fade" id="sp-lang" role="tabpanel" aria-labelledby="st-lang" tabindex="0"><div class="panel">
+        <h2 class="h4 mb-3">Language &amp; region</h2>
+        <form class="su-form" data-toast="Language preferences saved." aria-label="Language" style="max-width:480px">
+          <div class="d-grid gap-3">
+            <div class="field"><label class="form-label" for="lg-lang">Dashboard language</label><select class="form-select" id="lg-lang" name="lang"><option>English</option><option>தமிழ் (Tamil)</option><option>हिन्दी (Hindi)</option><option>العربية (Arabic, RTL)</option><option>עברית (Hebrew, RTL)</option></select></div>
+            <div class="field"><label class="form-label" for="lg-tz">Time zone</label><select class="form-select" id="lg-tz" name="tz"><option>Asia/Kolkata (IST)</option><option>Asia/Dubai (GST)</option><option>Europe/London</option><option>America/New_York</option></select></div>
+            <div class="field"><span class="form-label d-block">Layout direction</span><button class="btn btn-su-ghost" type="button" data-rtl-toggle aria-pressed="false"><i class="bi bi-text-right" aria-hidden="true"></i> Toggle <span class="rtl-label">RTL</span></button></div>
+            <div><button class="btn btn-su-primary" type="submit">Save</button></div>
+          </div>
+        </form>
+      </div></div>
+    </div></div>
+  </div>
+</main>
+<footer class="dash-footer">&copy; <span data-year>2026</span> SpeakUp Stage · <a href="../pages/contact.html">Help &amp; support</a> · v1.1.0</footer>
+</div>
+<script src="../assets/js/plugins/bootstrap/bootstrap.bundle.min.js" defer></script>
+<script src="../assets/js/plugins/chartjs/chart.umd.min.js" defer></script>
+<script src="../assets/js/main.js" defer></script>
+<script src="../assets/js/dashboard.js" defer></script>
+</body>
+</html>

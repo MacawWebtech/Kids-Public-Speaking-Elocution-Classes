@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Children | SpeakUp Stage Parent Dashboard</title>
+<meta name="description" content="Manage your children&#x27;s SpeakUp Stage profiles: age group, batch, coach, school, goals and pickup notes. Add siblings to enrol them and get 15% off fees.">
+<link rel="canonical" href="https://www.speakupstage.example/dashboard/children.html">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1B2A4E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SpeakUp Stage">
+<meta property="og:title" content="My Children | SpeakUp Stage Parent Dashboard">
+<meta property="og:description" content="Manage your children&#x27;s SpeakUp Stage profiles: age group, batch, coach, school, goals and pickup notes. Add siblings to enrol them and get 15% off fees.">
+<meta property="og:url" content="https://www.speakupstage.example/dashboard/children.html">
+<meta property="og:image" content="../assets/images/banner.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+<!-- Prevent theme/direction flash: read saved preferences before CSS paints -->
+<script>(function(){var d=document.documentElement,t=null,r=null;try{t=localStorage.getItem('su-theme');r=localStorage.getItem('su-dir');}catch(e){}d.setAttribute('data-theme',t||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));if(r==='rtl'){d.setAttribute('dir','rtl');d.setAttribute('lang','ar');}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- TODO: fonts. Swap families here and in the su-font custom properties (style.css) -->
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&amp;family=Caveat:wght@600&amp;family=Nunito:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<link id="bs-css" rel="stylesheet" href="../assets/js/plugins/bootstrap/bootstrap.min.css" data-ltr="../assets/js/plugins/bootstrap/bootstrap.min.css" data-rtl="../assets/js/plugins/bootstrap/bootstrap.rtl.min.css">
+<script>if(document.documentElement.dir==='rtl'){var b=document.getElementById('bs-css');b.href=b.getAttribute('data-rtl');}</script>
+<link rel="stylesheet" href="../assets/js/plugins/bootstrap-icons/bootstrap-icons.min.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/dashboard.css">
+<link rel="stylesheet" href="../assets/css/dark-mode.css">
+<link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body class="dash-body">
+<a class="skip-link" href="#main">Skip to main content</a>
+<aside class="dash-sidebar" id="dashSidebar" aria-label="Dashboard navigation">
+  <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><i class="bi bi-mic-fill"></i></span><span>SpeakUp Stage<small>parent portal</small></span></a>
+  <nav aria-label="Dashboard sections"><p class="side-label">Main</p><ul class="side-nav"><li><a class="side-link" href="index.html"><i class="bi bi-house-door" aria-hidden="true"></i><span>Overview</span></a></li><li><a class="side-link active" aria-current="page" href="children.html"><i class="bi bi-people" aria-hidden="true"></i><span>My Children</span></a></li><li><a class="side-link" href="enrol.html"><i class="bi bi-pencil-square" aria-hidden="true"></i><span>Enrol in Batches</span></a></li><li><a class="side-link" href="progress.html"><i class="bi bi-graph-up-arrow" aria-hidden="true"></i><span>Progress Tracker</span></a></li></ul><p class="side-label">Plan</p><ul class="side-nav"><li><a class="side-link" href="schedule.html"><i class="bi bi-calendar3" aria-hidden="true"></i><span>Schedule</span></a></li><li><a class="side-link" href="competitions.html"><i class="bi bi-trophy" aria-hidden="true"></i><span>Competitions</span></a></li><li><a class="side-link" href="payments.html"><i class="bi bi-wallet2" aria-hidden="true"></i><span>Payments</span><span class="count">1<span class="visually-hidden"> new</span></span></a></li><li><a class="side-link" href="messages.html"><i class="bi bi-chat-dots" aria-hidden="true"></i><span>Messages</span><span class="count">3<span class="visually-hidden"> new</span></span></a></li></ul><p class="side-label">Account</p><ul class="side-nav"><li><a class="side-link" href="settings.html"><i class="bi bi-gear" aria-hidden="true"></i><span>Settings</span></a></li></ul></nav>
+  <div class="side-help mt-4"><strong>Need help?</strong>Our parent desk replies within 2 hours on WhatsApp.<a class="d-flex align-items-center gap-2 mt-2 fw-800 text-decoration-none" style="color:var(--su-orange);min-height:44px" href="https://wa.me/919840012345"><i class="bi bi-whatsapp" aria-hidden="true"></i> Chat with us</a></div>
+  <ul class="side-nav mt-3"><li><a class="side-link" href="../index.html"><i class="bi bi-globe2" aria-hidden="true"></i><span>Back to website</span></a></li><li><a class="side-link" href="../pages/login.html"><i class="bi bi-box-arrow-left" aria-hidden="true"></i><span>Log out</span></a></li></ul>
+</aside>
+<div class="dash-backdrop" data-dash-close></div>
+<div class="dash-main">
+<header class="dash-topbar">
+  <button class="tool-btn dash-menu-btn" type="button" data-dash-toggle aria-controls="dashSidebar" aria-expanded="false" aria-label="Open dashboard menu"><i class="bi bi-list" aria-hidden="true"></i></button>
+  <form class="search" role="search" action="enrol.html"><label class="visually-hidden" for="dash-q">Search batches, coaches, invoices</label><i class="bi bi-search" aria-hidden="true"></i><input class="form-control" id="dash-q" type="search" name="q" placeholder="Search batches, coaches, invoices"></form>
+  <div class="dash-user">
+    <button class="tool-btn" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to dark mode"><i class="bi bi-moon-stars-fill" aria-hidden="true"></i></button>
+    <button class="tool-btn" type="button" data-rtl-toggle aria-pressed="false" aria-label="Switch to right-to-left layout"><span class="rtl-label">RTL</span></button>
+    <a class="tool-btn notif-dot" href="messages.html" aria-label="Messages, 3 unread"><i class="bi bi-bell" aria-hidden="true"></i></a>
+    <a class="d-flex align-items-center gap-2 text-decoration-none" href="settings.html"><img src="../assets/images/review1.jpg" alt="" width="160" height="160" loading="lazy" decoding="async"><span class="who"><strong>Lakshmi Venkatesh</strong><span>Parent · 2 children</span></span><span class="visually-hidden">Account settings</span></a>
+  </div>
+</header>
+<main class="dash-content" id="main" tabindex="-1">
+  <div class="dash-title"><div><h1>My children</h1><p>Profiles, batches and goals for each child.</p></div><div class="d-flex gap-2 flex-wrap"><button class="btn btn-su-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#childModal"><i class="bi bi-person-plus" aria-hidden="true"></i> Add child</button></div></div>
+
+  <div class="row g-4 mb-4"><div class="col-lg-6"><div class="panel">
+  <div class="child-card mb-3"><img src="../assets/images/diya.jpg" alt="Diya's profile photo" width="240" height="240" loading="lazy" decoding="async"><div class="flex-grow-1"><h2 class="h4 mb-0">Diya Venkatesh</h2><div class="meta">Age 9 · Young Speakers · Studio</div></div>
+    <div class="dropdown"><button class="tool-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="More actions for Diya"><i class="bi bi-three-dots-vertical" aria-hidden="true"></i></button><ul class="dropdown-menu dropdown-menu-end"><li><button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#childModal">Edit profile</button></li><li><a class="dropdown-item" href="enrol.html">Switch batch</a></li><li><a class="dropdown-item" href="progress.html">View progress</a></li></ul></div></div>
+  <dl class="row small mb-3">
+    <dt class="col-5 text-muted-su">Batch</dt><dd class="col-7 fw-bold">YS-B2 · Sat 10:00 AM</dd>
+    <dt class="col-5 text-muted-su">Coach</dt><dd class="col-7 fw-bold">Meera Iyer</dd>
+    <dt class="col-5 text-muted-su">School</dt><dd class="col-7 fw-bold">Chettinad Vidyashram, Class 4</dd>
+    <dt class="col-5 text-muted-su">Languages</dt><dd class="col-7 fw-bold">English, Tamil</dd>
+    <dt class="col-5 text-muted-su">Goal</dt><dd class="col-7 fw-bold">Speak at the school assembly</dd>
+  </dl>
+  <div class="cmeter"><div class="cmeter-head"><span>Confidence Meter</span><span class="val">82%</span></div><div class="cwave" role="img" data-level="82" data-bars="24" aria-label="Confidence Meter: 82 out of 100"></div></div>
+  <div class="d-flex gap-2 flex-wrap mt-3"><button class="btn btn-su-ghost btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#childModal"><i class="bi bi-pencil" aria-hidden="true"></i> Edit</button><a class="btn btn-su-ghost btn-sm" href="progress.html"><i class="bi bi-graph-up" aria-hidden="true"></i> Progress</a><a class="btn btn-su-ghost btn-sm" href="schedule.html"><i class="bi bi-calendar3" aria-hidden="true"></i> Schedule</a></div>
+</div></div><div class="col-lg-6"><div class="panel">
+  <div class="child-card mb-3"><img src="../assets/images/aarav.jpg" alt="Arjun's profile photo" width="240" height="240" loading="lazy" decoding="async"><div class="flex-grow-1"><h2 class="h4 mb-0">Arjun Venkatesh</h2><div class="meta">Age 13 · Rising Orators · Studio</div></div>
+    <div class="dropdown"><button class="tool-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="More actions for Arjun"><i class="bi bi-three-dots-vertical" aria-hidden="true"></i></button><ul class="dropdown-menu dropdown-menu-end"><li><button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#childModal">Edit profile</button></li><li><a class="dropdown-item" href="enrol.html">Switch batch</a></li><li><a class="dropdown-item" href="progress.html">View progress</a></li></ul></div></div>
+  <dl class="row small mb-3">
+    <dt class="col-5 text-muted-su">Batch</dt><dd class="col-7 fw-bold">RO-A · Sat 11:30 AM</dd>
+    <dt class="col-5 text-muted-su">Coach</dt><dd class="col-7 fw-bold">Priya Nair</dd>
+    <dt class="col-5 text-muted-su">School</dt><dd class="col-7 fw-bold">PSBB Millennium, Class 8</dd>
+    <dt class="col-5 text-muted-su">Languages</dt><dd class="col-7 fw-bold">English, Tamil</dd>
+    <dt class="col-5 text-muted-su">Goal</dt><dd class="col-7 fw-bold">Win an inter-school elocution</dd>
+  </dl>
+  <div class="cmeter"><div class="cmeter-head"><span>Confidence Meter</span><span class="val">74%</span></div><div class="cwave" role="img" data-level="74" data-bars="24" aria-label="Confidence Meter: 74 out of 100"></div></div>
+  <div class="d-flex gap-2 flex-wrap mt-3"><button class="btn btn-su-ghost btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#childModal"><i class="bi bi-pencil" aria-hidden="true"></i> Edit</button><a class="btn btn-su-ghost btn-sm" href="progress.html"><i class="bi bi-graph-up" aria-hidden="true"></i> Progress</a><a class="btn btn-su-ghost btn-sm" href="schedule.html"><i class="bi bi-calendar3" aria-hidden="true"></i> Schedule</a></div>
+</div></div>
+    <div class="col-lg-6"><div class="empty-state h-100 d-flex flex-column justify-content-center"><div class="es-ico" aria-hidden="true"><i class="bi bi-person-plus"></i></div><h2 class="h4">Add another child</h2><p>Siblings get 15% off. Add a profile to book a demo or enrol.</p><button class="btn btn-su-navy align-self-center" type="button" data-bs-toggle="modal" data-bs-target="#childModal"><i class="bi bi-plus-lg" aria-hidden="true"></i> Add a child</button></div></div>
+  </div>
+  <div class="panel">
+    <div class="panel-head"><h2><i class="bi bi-heart-pulse" aria-hidden="true"></i> Health &amp; pickup notes</h2></div>
+    <div class="empty-state border-0 p-3"><div class="es-ico" aria-hidden="true"><i class="bi bi-clipboard2-check"></i></div><h3>No notes yet</h3><p>Add allergies, medical notes or who can pick up your children. Coaches see these before every class.</p><button class="btn btn-su-ghost btn-sm" type="button" data-demo-toast="Notes editor placeholder: connect your backend." data-icon="bi-clipboard2-plus">Add a note</button></div>
+  </div>
+
+  <!-- Add / edit child modal -->
+  <div class="modal fade" role="dialog" id="childModal" tabindex="-1" aria-labelledby="childModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+      <div class="modal-header"><h2 class="modal-title h4" id="childModalLabel">Child profile</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+      <form class="su-form" data-toast="Child profile saved." data-close-modal aria-label="Child profile form">
+        <div class="modal-body"><div class="row g-3">
+          <div class="col-sm-6 field"><label class="form-label" for="ch-first">First name</label><input class="form-control" id="ch-first" name="first" required data-msg="Please tell us your child's first name."></div>
+          <div class="col-sm-6 field"><label class="form-label" for="ch-dob">Date of birth</label><input class="form-control" id="ch-dob" type="date" name="dob" min="2010-01-01" max="2021-12-31" required data-msg="Please add a date of birth so we can suggest the right age group."></div>
+          <div class="col-12 field"><label class="form-label" for="ch-school">School &amp; class</label><input class="form-control" id="ch-school" name="school" placeholder="e.g. DAV Gopalapuram, Class 5"></div>
+          <div class="col-12 field"><label class="form-label" for="ch-goal">What would you love them to gain?</label><textarea class="form-control" id="ch-goal" name="goal" rows="3" placeholder="e.g. Speak up in class, prepare for a competition"></textarea></div>
+        </div></div>
+        <div class="modal-footer"><button type="button" class="btn btn-su-ghost" data-bs-dismiss="modal">Cancel</button><button type="submit" class="btn btn-su-primary">Save profile</button></div>
+      </form>
+    </div></div>
+  </div>
+</main>
+<footer class="dash-footer">&copy; <span data-year>2026</span> SpeakUp Stage · <a href="../pages/contact.html">Help &amp; support</a> · v1.1.0</footer>
+</div>
+<script src="../assets/js/plugins/bootstrap/bootstrap.bundle.min.js" defer></script>
+<script src="../assets/js/plugins/chartjs/chart.umd.min.js" defer></script>
+<script src="../assets/js/main.js" defer></script>
+<script src="../assets/js/dashboard.js" defer></script>
+</body>
+</html>
